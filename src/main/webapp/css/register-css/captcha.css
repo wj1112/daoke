@@ -1,0 +1,76 @@
+
+.User_grade{margin: auto auto 0px 0px;overflow:hidden;float:left;text-align:center}
+.User_ratings .ratings_title01{width:407px;height:auto;font-family:"微软雅黑","宋体";font-size:14px;color:#aaaaaa;}
+.User_ratings .ratings_title p{float:left;}
+.User_ratings .ratings_title p span{font-size:48px;}
+.User_ratings .ratings_title p i{color:#7dc234;font-style:normal;}
+.User_ratings .ratings_title01 p span{font-size:18px;}
+.User_ratings .ratings_title01 p i{color:#7dc234;font-style:normal;}
+.User_ratings .ratings_title01 input{width:120px;height:48px;border:0;margin:15px auto auto 45px;float:left;background:url(../images/batton_01.png) -202px -2441px no-repeat;}
+.User_ratings .ratings_title01 input:hover{background:url(../images/batton_01.png) -202px -2489px no-repeat;}
+.User_ratings .ratings_title01 input01{background:url(../images/batton_01.png) -202px -2537px no-repeat;}
+.User_ratings .ratings_title input{width:120px;height:48px;border:0;margin:15px auto auto 45px;float:left;background:url(../images/batton_01.png) -202px -2441px no-repeat;}
+.User_ratings .ratings_title input:hover{background:url(../images/batton_01.png) -202px -2489px no-repeat;}
+.User_ratings .ratings_title input01{background:url(../images/batton_01.png) -202px -2537px no-repeat;}
+.User_ratings .ratings_bars{width:270px;float:left; border: 1px solid #eee;height: 30px;line-height: 30px;background: #f8f8f8; position: relative;}
+.User_ratings .ratings_bars #title0{width:25px;height:25px;text-align:center;border:1px solid #bfbebe;line-height:25px;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;float:left;color:#a0a0a0;margin-right:10px;background:#fff;}
+.User_ratings .ratings_bars #title1{width:25px;height:25px;text-align:center;border:1px solid #bfbebe;line-height:25px;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;float:left;color:#a0a0a0;margin-right:10px;background:#fff;}
+.User_ratings .ratings_bars #title2{width:25px;height:25px;text-align:center;border:1px solid #bfbebe;line-height:25px;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;float:left;color:#a0a0a0;margin-right:10px;background:#fff;}
+.User_ratings .ratings_bars #title3{width:25px;height:25px;text-align:center;border:1px solid #bfbebe;line-height:25px;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;float:left;color:#a0a0a0;margin-right:10px;background:#fff;}
+.User_ratings .ratings_bars #title4{width:25px;height:25px;text-align:center;border:1px solid #bfbebe;line-height:25px;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;float:left;color:#a0a0a0;margin-right:10px;background:#fff;}
+.User_ratings .ratings_bars .bars_10{font-family:Georgia, "Times New Roman", Times, serif;font-size:18px;line-height:25px;float:left;color:#a0a0a0;}
+.User_ratings .ratings_bars .scale{width:100%;height:30px;float:left;position:relative;}
+.User_ratings .ratings_bars .scale div{width:0px;position:absolute;width:0;left:0;height:13px;bottom:0;background-color: #7ac23c; height: 30px;}
+.User_ratings .ratings_bars .scale span{width:30px;height:30px;*height:28px;position:absolute;left:0px;cursor:move;background:url(../images/rt.png) center no-repeat; background-color: #fff;border-right: 1px solid #eee; box-sizing: border-box;z-index: 3;}
+.User_ratings .ratings_bars .scale span.refresh{cursor: pointer;}
+.User_ratings .ratings_bars .scale span.checkok {background:url(../images/rt_ok.png) center no-repeat;background-color: #fff; }
+.User_ratings .ratings_bars .scale span.refresh {background:url(../images/refresh.png) center no-repeat;background-color: #fff; }
+.User_ratings .ratings_bars .nc-lang-cnt{ font-size: 12px; color: #444444; width: 100%; height: 30px; padding: 0;position: absolute; margin:0px;left: 0px;}
+.User_ratings .ratings_bars .nc-lang-cnt-ok{ font-size: 12px; color: #fff; width: 100%; height: 30px; padding: 0;position: absolute; margin:0px;left: 0px;}
+.User_ratings .ratings_bars .redtext{color:red;}
+.check-it-text {text-align: center; color: #f00;padding-bottom:6px;}
+.redtext{color:red;}
+
+#m_nocaptcha .scale{height:40px;}
+#m_nocaptcha .scale span{width:40px;height:40px;}
+#m_nocaptcha .User_ratings .ratings_bars{height:40px;}
+#m_nocaptcha .User_ratings .ratings_bars .nc-lang-cnt{height:40px;line-height: 40px;}
+#m_nocaptcha .User_ratings .ratings_bars .nc-lang-cnt-ok{height:40px;line-height: 40px;}
+#m_nocaptcha .User_ratings .ratings_bars .scale div{height:40px;}
+
+#nocaptcha0 .ratings_bars{width:190px;}
+#nocaptcha1 .ratings_bars{width:190px;}
+
+/*二维码验证*/
+.verify {
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.qrcode-show {
+    width: 124px;
+    height: 124px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 255px;
+    z-index: 3;
+    display: none;
+    top:-46px;
+}
+
+.wx_login{margin-bottom: 20px;}
+.wx_login .qrcode-show{
+    width: 130px;
+    height: 130px;
+    top: -140px;
+    left: 80px;
+}
+.wx_login .qrcode-show .arrow {
+    position: absolute;
+    top: 125px;
+    left: 59px;
+    width: 16px;
+    height: 16px;
+    background: url(../uc/images/arrow.gif) no-repeat;
+}

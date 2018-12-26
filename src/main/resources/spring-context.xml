@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+        default-autowire="byName" default-lazy-init="true">
+    <!-- 配置自动扫描包: 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+	<context:component-scan base-package="com.doc" >
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>    
+    
+    <!-- 导入资源文件 -->
+	<context:property-placeholder location="classpath:application.properties" />
+    
+    <!-- dbcp 数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+
+		<property name="maxActive" value="${dbcp.maxActive}" />
+		<property name="maxIdle" value="${dbcp.maxIdle}" />
+		<property name="defaultAutoCommit" value="false" />
+
+		<property name="timeBetweenEvictionRunsMillis" value="3600000" />
+		<property name="minEvictableIdleTimeMillis" value="3600000" />
+	</bean>  
+    <!-- spring集成mybatis, 省略掉mybatis的主配置文件 -->
+	 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!-- 领域类的别名,定位到具体包，自动扫描entity目录 -->
+        <property name="typeAliasesPackage" value="com.doc.entity" />
+        <!-- 加载模块的配置文件，使用通配符 -->
+        <property name="mapperLocations" value="classpath:mapper/*Mapper.xml" />
+    </bean>
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+         <property name="dataSource" ref="dataSource" />  
+    </bean>
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+		 <!--配置事务传播性，隔离级别以及超时回滚等问题 -->
+		<tx:attributes><!-- 定位类中的方法，增删改需要事务，查询不需要事务 -->
+			<tx:method name="create*" />
+			<tx:method name="modify*" />
+			<tx:method name="remove*" />			
+			<tx:method name="*" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config proxy-target-class="true">
+		<!--配置事务切点，定位具体的类和类中的所有方法 -->
+		<aop:pointcut id="txPointcut" expression="execution(* com.doc.service.*Service.*(..))" />
+		<!-- 配置切入点 和具体的方法通知 -->
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut" />
+	</aop:config>
+</beans>

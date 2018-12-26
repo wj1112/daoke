@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="mapper.UsersMapper">
+  <resultMap id="getListResultMap" type="Users" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="DATE" />
+    <result column="qq" property="qq" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="DATE" />
+    <result column="headPortrait" property="headPortrait" jdbcType="VARCHAR" />
+    <result column="userType" property="userType" jdbcType="VARCHAR" />
+  </resultMap> 
+  <insert id="insert" parameterType="Users">
+  	insert into user
+  	<trim prefix="(" suffix=")" suffixOverrides="," >
+	      <if test="username != null" >username,</if>
+	      <if test="password != null" >password,</if>
+	      <if test="sex != null" >sex,</if>
+	      <if test="birthday != null" >birthbay,</if>
+	      <if test="qq != null" >qq,</if>
+	      <if test="mobile != null" >mobile,</if>
+	      <if test="email != null" >email,</if>
+	      <if test="create_time != null" >create_time,</if>
+	      <if test="head_portrait != null" >head_portrait,</if>
+	      <if test="user_type != null" >user_type,</if>
+	    </trim>
+	    <trim prefix="values (" suffix=")" suffixOverrides="," >
+	      <if test="username != null" >#{username,jdbcType=VARCHAR},</if>
+	      <if test="password != null" >#{password,jdbcType=VARCHAR},</if>
+	      <if test="sex != null" >#{sex,jdbcType=VARCHAR},</if>
+	      <if test="birthday != null" >#{birthday,jdbcType=DATE},</if>
+	      <if test="qq != null" >#{qq,jdbcType=VARCHAR},</if>
+	      <if test="mobile != null" >#{mobile,jdbcType=VARCHAR},</if>
+	      <if test="email != null" >#{email,jdbcType=VARCHAR},</if>
+	      <if test="createTime != null" >#{createTime,jdbcType=DATETIME},</if>
+	      <if test="headPortrait != null" >#{headPortrait,jdbcType=VARCHAR},</if>
+	      <if test="userType != null" >#{userType,jdbcType=VARCHAR},</if>
+	    </trim>  
+  </insert>
+  
+  <delete id="delete" parameterType="int">
+  	delete from user where id=#{id}
+  </delete>
+  
+  <update id="update" parameterType="Users">
+  	update user
+    <set>
+      <if test="username != null" >username= #{username,jdbcType=VARCHAR},</if>
+      <if test="password != null" >password= #{password,jdbcType=VARCHAR},</if>
+      <if test="sex != null" >sex= #{sex,jdbcType=VARCHAR},</if>
+      <if test="birthday != null" >birthday #{birthday,jdbcType=DATE},</if>
+      <if test="qq != null" >qq = #{qq,jdbcType=VARCHAR},</if>
+      <if test="mobile != null" >mobile = #{mobile,jdbcType=VARCHAR},</if>
+      <if test="email != null" >email = #{email,jdbcType=VARCHAR},</if>
+      <if test="headPortrait != null" >headPortrait = #{headPortrait,jdbcType=VARCHAR},</if>
+      <if test="userType != null" >userType = #{userType,jdbcType=VARCHAR},</if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <select id="getOne" parameterType="int" resultType="Users">
+  	select * from user where id = #{id}
+  </select>
+  
+  <select id="getList" parameterType="Users" resultMap="getListResultMap">
+  		select * from user <include refid="getCondition" />
+  </select>
+  
+  <!-- 查询条件 分离出来 -->
+<sql id="getCondition">
+	 <where>
+ 		<if test="username != null and username != ''"> and username like concat('%',#{username},'%')</if>
+ 		<if test="password != null and password != ''"> and password = #{password}</if>
+ 		<if test="sex != null and sex != ''"> and sex = #{sex}</if>
+ 		<if test="birthday != null and birthday != ''"> and birthday = #{birthday}</if>
+ 		<if test="qq != null and qq != ''"> and qq = #{qq}</if>
+ 		<if test="mobile != null and mobile != ''"> and mobile = #{mobile}</if>
+ 			 	
+ 	</where>
+</sql>
+  
+  </mapper>

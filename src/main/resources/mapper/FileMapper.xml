@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="mapper.FileMapper">
+  <resultMap id="getListResultMap" type="File" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="userId" property="userId" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="filename" property="filename" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="DATE" />
+    <result column="path" property="path" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="download" property="download" jdbcType="INTEGER" />
+    <result column="browse" property="browse" jdbcType="INTEGER" />
+    <result column="classifyId" property="classifyId" jdbcType="INTEGER" />
+    <result column="outline" property="outline" jdbcType="VARCHAR" />
+    <result column="audit" property="audit" jdbcType="INTEGER" />
+  </resultMap> 
+  <insert id="insert" parameterType="Users">
+  	insert into file
+  	<trim prefix="(" suffix=")" suffixOverrides="," >
+	      <if test="userId != null" >userId,</if>
+	      <if test="title != null" >title,</if>
+	      <if test="filename != null" >filename,</if>
+	      <if test="createtime != null" >createtime,</if>
+	      <if test="path != null" >path,</if>
+	      <if test="download != null" >download,</if>
+	      <if test="browse != null" >browse,</if>
+	      <if test="type != null" >type,</if>
+	      <if test="outline != null" >outline,</if>
+	      <if test="classifyId != null" >classifyId,</if>
+	      <if test="outline != null" >outline,</if>
+	    </trim>
+	    <trim prefix="values (" suffix=")" suffixOverrides="," >
+	      <if test="userId != null" >#{userId,jdbcType=VARCHAR},</if>
+	      <if test="title != null" >#{title,jdbcType=VARCHAR},</if>
+	      <if test="filename != null" >#{filename,jdbcType=VARCHAR},</if>
+	      <if test="createtime != null" >#{createtime,jdbcType=DATE},</if>
+	      <if test="path != null" >#{path,jdbcType=VARCHAR},</if>
+	      <if test="download != null" >#{download,jdbcType=VARCHAR},</if>
+	      <if test="browse != null" >#{browse,jdbcType=VARCHAR},</if>
+	      <if test="type != null" >#{type,jdbcType=DATETIME},</if>
+	      <if test="outline != null" >#{outline,jdbcType=VARCHAR},</if>
+	      <if test="classifyId != null" >#{classifyId,jdbcType=VARCHAR},</if>
+	      <if test="outline != null" >#{outline,jdbcType=VARCHAR},</if>
+	    </trim>  
+  </insert>
+  
+  <delete id="delete" parameterType="int">
+  	delete from user where id=#{id}
+  </delete>
+  
+  <update id="update" parameterType="Users">
+  	update user
+    <set>
+      <if test="userId != null" >userId= #{userId,jdbcType=VARCHAR},</if>
+      <if test="title != null" >title= #{title,jdbcType=VARCHAR},</if>
+      <if test="filename != null" >filename= #{filename,jdbcType=VARCHAR},</if>
+      <if test="createtime != null" >birthday #{birthday,jdbcType=DATE},</if>
+      <if test="path != null" >path = #{path,jdbcType=VARCHAR},</if>
+      <if test="download != null" >download = #{download,jdbcType=VARCHAR},</if>
+      <if test="browse != null" >browse = #{browse,jdbcType=VARCHAR},</if>
+      <if test="type != null" >type = #{type,jdbcType=VARCHAR},</if>
+      <if test="outline != null" >outline = #{outline,jdbcType=VARCHAR},</if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <select id="getOne" parameterType="int" resultType="Users">
+  	select * from user where id = #{id}
+  </select>
+  
+  <select id="getList" parameterType="Users" resultMap="getListResultMap">
+  		select * from user <include refid="getCondition" />
+  </select>
+  
+  <!-- 查询条件 分离出来 -->
+<sql id="getCondition">
+	 <where>
+ 		<if test="username != null and username != ''"> and username like concat('%',#{username},'%')</if>
+ 		<if test="password != null and password != ''"> and password = #{password}</if>
+ 		<if test="sex != null and sex != ''"> and sex = #{sex}</if>
+ 		<if test="birthday != null and birthday != ''"> and birthday = #{birthday}</if>
+ 		<if test="qq != null and qq != ''"> and qq = #{qq}</if>
+ 		<if test="mobile != null and mobile != ''"> and mobile = #{mobile}</if>
+ 			 	
+ 	</where>
+</sql>
+  
+  </mapper>

@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* CSS Document */
+
+.uploadpage .mainpart{
+    background: white!important;
+}
+
+.uploadbox{position: relative;}
+.uploadbox .banner{
+    height: 50px;
+    padding: 10px 0;
+}
+.uploadbox .banner h1{
+    float: left;
+    padding: 0 20px 0 50px;
+    background: url(../images/icons/upload-blue.png) no-repeat left center;
+    font-size: 24px;
+    line-height: 50px;
+    color: #00a1e9;
+}
+.uploadbox .banner img{
+    float: left;
+    margin: 10px 0 0;
+}
+/* 上传选项卡，分别为：公开文档与私有文档 */
+.uploadtag{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: solid 1px #eee;
+    background: #fff;
+}
+.uploadtag li{
+    float: left;
+    width: 50%;
+    background: white;
+    overflow: hidden;
+}
+.uploadtag li.current{width:90%;}
+.uploadtag li.current form{border: dashed 2px #999!important;}
+
+.uploadtag li.current form.open{background:url(../images/icons/upload-open-bg.png) no-repeat right bottom;}
+.uploadtag li.current form.lock{background:url(../images/icons/upload-lock-bg.png) no-repeat right bottom;}
+
+.uploadtag li.besides form{border-color: #eee;}
+.uploadtag li.besides{width:10%;}
+
+.uploadtag form{
+    border: dashed 2px #ccc;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+.uploadtag form.open{border-right: solid 1px #eee;}
+.uploadtag form.lock{border-left: solid 1px #eee;}
+.uploadtag form.open .upload-guild dt{background:url(../images/icons/upload-open.png) no-repeat left center;}
+.uploadtag form.lock .upload-guild dt{background:url(../images/icons/upload-lock.png) no-repeat left center;}
+.uploadtag form.open .upload-guild dt:hover{background:url(../images/icons/upload-open-green.png) no-repeat left center; color: green;}
+.uploadtag form.lock .upload-guild dt:hover{background:url(../images/icons/upload-lock-green.png) no-repeat left center; color: green;}
+
+/* 选项卡中的指导信息布局 */
+.upload-guild{
+    overflow: hidden;
+    height: 120px;
+    padding:30px 10px 0;
+}
+.upload-guild dt{
+    height: 64px;
+    padding: 12px 0 8px 74px;
+    line-height: 32px;
+    overflow: hidden;
+    color: #999;
+    font-size: 16px;
+}
+.upload-guild dt h5{font-size: 24px;}
+.upload-guild dd{
+    display: none;
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    line-height: 32px;
+
+}
+.upload-guild dd .tips,
+.upload-guild dd .format{font-size: 14px; color: #999;}
+.upload-guild dd .format img{
+    display: inline;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+/* 上传文档列表 */
+.upload-list3{
+    position: relative;
+    border: solid 1px #ccc;
+    background: white;
+    margin:0 0 10px;
+    padding: 1px;
+}
+/* Summary 摘要信息，包括：标题、描述与右侧操作按钮 */
+.upload-list3 .summary{
+    height: 48px;
+    padding: 16px 10px;
+    border-bottom: solid 1px #ccc;
+    background:url(../images/gradients-bg1.png) repeat-x bottom;
+	box-shadow:none;/* 修复与认证页面冲突*/
+	border:none;
+}
+/* Summary 中的 标题、描述 */
+.upload-list3 .summary .msg{
+    float: left;
+    height: 48px;
+    padding-left: 64px;
+    background: url(../images/icons/upload-right.png) no-repeat left;
+}
+.upload-list3 .summary .msg dt{font-size: 20px;}
+.upload-list3 .summary .msg dd{color: #999;}
+/* Summary 中的右侧操作按钮 */
+.upload-list3 .summary .shop{
+    float: right;
+    height: 30px;
+    padding: 6px 0;
+    line-height: 30px;
+}
+.upload-list3 .summary .shop input,
+.upload-list3 .summary .shop a{margin-left: 10px;}
+.upload-list3 .summary .shop a{
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* 编辑区域布局 */
+.editlayout{
+    position: relative;
+    padding:10px;
+    border-top: solid 1px #ccc;
+    overflow: visible;
+}
+.editlayout .close{
+    position: absolute;
+    z-index: 992;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/close-16px.png) no-repeat;
+}
+.editlayout .close:hover{background-position: 0 -16px;}
+.editlayout dt{
+
+    height: 30px;
+    padding: 5px 0;
+    line-height: 30px;
+
+}
+/* 上传文档的进度条，作为背景显示在 DT 中 */
+.editlayout dt .planbg{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: solid 1px #99f29b;
+
+    background:#efe; /* 一些不支持背景渐变的浏览器 */    
+    background:-moz-linear-gradient(to right, #f6fff6, #c6fcc6);  
+    background:-webkit-linear-gradient(to right, #f6fff6, #c6fcc6); 
+    background:-o-linear-gradient(to right, #f6fff6, #c6fcc6); 
+    background:linear-gradient(to right, #f6fff6, #c6fcc6);
+
+}
+.editlayout dt h6{
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: 30px;
+    padding: 0 100px 0 50px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;/*Not working in FF*/
+}
+
+.editlayout dt h6 img.type{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 7px 10px 0 0;
+}
+.editlayout dt h6 a{color: #333;}
+.editlayout dt h6 em.plan{padding: 0 20px; color: #999;}
+.editlayout dd{float: left; width: 50%;}
+/* 上传文档的序列号，书签形式背景 */
+.editlayout .bookmark{
+    position: absolute;
+    z-index: 1;
+    top: 18px;
+    left: 0;
+    width: 22px;
+    height: 24px;
+    padding-right: 10px;
+    background: url(../images/icons/bookmark-blue.png) no-repeat;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+/* 当前文档的展开&关闭、删除操作 */
+.editlayout .bookshop{
+    position: absolute;
+    z-index: 981;
+    top: 18px;
+    right: 10px;
+}
+.editlayout .bookshop .switch,
+.editlayout .bookshop .delete,
+.editlayout .bookshop .see{
+    height: 24px;
+    color: #666;
+    line-height: 24px;
+    text-decoration: none;
+    float: left;
+    margin-left: 6px;
+}
+
+.editlayout .bookshop .switch{
+    margin-right: 10px;
+    padding-right:18px;
+    background:url(../images/icons/pointer-up.png) no-repeat right;
+}
+.editlayout .bookshop .off{background:url(../images/icons/pointer-down.png) no-repeat right;}
+.editlayout .bookshop .no{visibility:hidden}
+.editlayout .bookshop .delete{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background:url(../images/book-delete.png) no-repeat;
+}
+.editlayout .bookshop .delete:hover{background-position: 0 -24px;}
+
+.editlayout .bookshop .see{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background:url(../images/book-see.png) no-repeat;
+}
+.editlayout .bookshop .see:hover{background-position: 0 -24px;}
+
+
+/* 文档编辑区 */
+.booksedit{
+    margin:1px -5px 1px;
+    padding: 5px 10px;
+    background:#fff;
+    font-size: 12px;
+}
+.booksedit-bdr{border-left: dashed 1px #ccc;}
+
+.booksedit .tips{color:#999; font-size: 12px;}
+
+/* 表单项样式控制，仅包括 text 与 textarea */
+.booksedit .titles,
+.booksedit .number,
+.booksedit .content,
+.booksedit .warning{
+    width:90%;
+    height: 25px;
+    border:solid 1px #ccc;
+    background:white;
+    padding:0 5px;
+    resize: none;
+    font-size:14px;
+    line-height:25px;
+    color:#999;
+}
+.booksedit .number{width:60px;}
+.booksedit .content{
+    height:80px;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.booksedit .titles:focus,
+.booksedit .number:focus,
+.booksedit .content:focus{border-color:#00a1e9; color:#333;}
+
+.booksedit .warning,
+.booksedit .warning:focus{border-color: #ff7f7f; background: #fff2f2;}
+
+.booksedit table{width:100%;}
+.booksedit table td{
+    padding:5px;
+    vertical-align:top;
+    text-align:left;
+    font-size:14px;
+    line-height:25px;
+}
+.booksedit table td.name{width:80px; text-align: right;}
+
+/* 编辑内容排版表格 */
+.edit-table{width:100%; border:none;}
+.edit-table td{
+    position: relative;
+    padding:5px;
+    border:none;
+    vertical-align:top;
+    text-align:left;
+    font-size:14px;
+    line-height:25px;
+}
+.edit-table td.name{width:80px; text-align: right;}
+
+.edit-table .msgs{font-size: 12px; color: red;}
+
+/* 选择使用的分类，如：选择群组 */
+.categorie{position:relative; margin-bottom: 5px;}
+.categorie ul{
+    max-height: 72px;
+	width:286px;
+    padding: 10px;
+    border:solid 1px #ccc;
+    background: white;
+    overflow: auto;
+}
+.categorie ul li{
+    float: left;
+    width: 50%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.categorie .shop{
+    border:solid 1px #ccc;
+    border-top: none;
+    background: #eee;
+    padding: 0 10px;
+}
+/* end */
+
+
+/* 关于公开文档与私有文档的描述信息，位于上传控件与已上传文档列表下边 */
+.upload-msg{
+    position: relative;
+    border: solid 1px #ccc;
+    border-top-width: 3px;
+    border-top-color: #00a1e9;
+    margin-bottom: 10px;
+}
+.upload-msg .msgtop{
+    height: 30px;
+    border-bottom: dashed 1px #eee;
+    margin: 0 0 10px;
+    padding:0 0 5px ;
+    font-size: 20px;
+    line-height: 30px;
+}
+.upload-msg .msgtop h2{
+    float: left;
+    font-size: 20px;
+}
+.upload-msg .msgtop small{float: right;}
+
+.upload-msg  .msgcon{color: #666;}
+.upload-msg  .msgcon dt{font-size: 16px; line-height: 30px;}
+.upload-msg  .msgcon dd{
+    text-indent: 1em;
+    font: 14px/25px "微软雅黑","Hei","宋体";
+}
+.upload-msg  .msgtip{
+    border: solid 1px #;
+    background:# ;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.msg-for-all,
+.msg-for-open,
+.msg-for-lock{padding: 20px;}
+
+.msg-for-open{background:url(../images/icons/upload-open-bg.png) no-repeat right bottom;}
+.msg-for-lock{background:url(../images/icons/upload-lock-bg.png) no-repeat right bottom;}
+
+.msg-for-all{padding: 20px 300px 20px 20px;}
+.msg-note{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 240px;
+    border: solid 1px #ffe4b8;
+    background: #fffef2;
+    padding: 10px;
+    color: #f64000;
+}
+.msg-note dt{
+    border-bottom: dashed 1px #ffe4b8;
+    margin-bottom: 10px;
+    padding: 0 0 5px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.msg-note dd{
+    line-height: 30px;
+    text-indent: 1em;
+}

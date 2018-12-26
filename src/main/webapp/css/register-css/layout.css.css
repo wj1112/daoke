@@ -1,0 +1,4052 @@
+@charset "utf-8";
+/* CSS Document */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: none;
+}
+.content {
+    position: relative;
+}
+
+.leftmenu {
+    float: left;
+    width: 160px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.mainbody {
+    float: left;
+    width: 840px;
+    position: relative;
+}
+
+.mybody {
+    padding: 20px 0 0;
+}
+
+/* Sidebar 侧边栏 */
+.sidebar {
+    float: right;
+    width: 250px;
+}
+
+.minbox1 .textbox,
+.minbox2 .textbox{
+    line-height: 20px;
+}
+.minbox1 .textbox h5,
+.minbox2 .textbox h5{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 5px 0 10px;
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+.minbox1 .textbox p,
+.minbox2 .textbox p{
+    padding: 5px 0;
+    text-indent: 2em;
+}
+
+.minbox1 {
+    position: relative;
+    overflow: hidden;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.minbox1 .topic {
+    height: 30px;
+    padding: 10px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.minbox1 .topic h4 {
+    float: left;
+    font-size: 18px;
+}
+
+.minbox1 .topic .extend,
+.minbox1 .topic .more {
+    position: relative;
+    float: right;
+}
+
+.minbox1 .box {
+    padding: 0 10px 10px;
+}
+
+.minbox2 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.minbox2 .topic {
+    height: 35px;
+    padding: 0 10px;
+    line-height: 35px;
+    overflow: hidden;
+}
+
+.minbox2 .topic h4 {
+    float: left;
+    font-size: 18px;
+}
+
+.minbox2 .topic .extend,
+.minbox2 .topic .more {
+    float: right;
+}
+.minbox2 .topic .extend dt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.minbox2 .topic .extend dd{
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 0;
+}
+.minbox2 .topic .extend ul li{
+    padding: 5px 30px 5px 10px;
+    height: 20px;
+    border-bottom: solid;
+    border-width: 1px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+
+.minbox2 .box {
+    padding: 10px;
+}
+.maxbox1,
+.maxbox2{
+    position: relative;
+    margin-bottom: 10px;
+}
+.maxbox1{
+    border-style: solid;
+    border-width: 1px;
+    background: white;
+}
+.maxbox1 .topic{
+    height: 30px;
+    padding: 10px 20px;
+    line-height: 30px;
+}
+.maxbox1 .topic h4{
+    float: left;
+    font-size: 18px;
+}
+.maxbox1 .box{
+    padding: 0 10px 10px;
+}
+/* Update 中间更新 */
+.update1 {
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    min-height: 760px;
+}
+
+.update3{
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    min-height: 760px;
+}
+
+.update1,
+.update2 {
+    margin-right: 250px !important;
+    margin-right: 247px;
+
+}
+
+.update2 {
+    margin-right: 260px !important;
+    margin-right: 257px;
+}
+
+.update3 {
+    border-right: none;
+}
+
+/* 传文档、发状态 */
+.publish, .setting {
+    position: relative;
+}
+.publish {
+    padding-bottom: 10px;
+}
+
+.publish .setting {
+    height: 30px;
+    padding: 20px 10px 10px;
+}
+
+.publish .setting li {
+    position: relative;
+    float: left;
+    height: 30px;
+    padding: 0 30px 0 0;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.publish .setting li.current {
+    cursor: default;
+}
+
+.publish .setting li img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+.publish .setting li em {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 33px;
+    left: 50%;
+    margin-left: -7.5px;
+    width: 15px;
+    height: 8px;
+}
+
+.publish .setting li.current em {
+    display: block;
+}
+
+.publish .posterboard {
+    padding: 0 10px;
+}
+
+.wantto{
+	position:relative;
+	border-style:solid;
+	border-width:1px;
+	line-height:30px;
+	cursor:text;
+    overflow:visible!important;
+}
+
+.wantto .goto {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "微软雅黑","黑体","宋体";
+}
+
+/* End */
+
+/* 快速上传文档 & 发状态 */
+.upload-list1 {
+    overflow: hidden;
+    padding: 5px 5px 10px;
+}
+
+.upload-list1 li {
+    float: left;
+    height: 20px;
+    margin: 2px 0;
+    padding-right: 15px;
+    line-height: 20px;
+}
+
+.upload-list1 li img.type {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 2px 5px 0 0;
+}
+
+.upload-list1 li .plan {
+    padding: 0 5px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.upload-list1 li .del{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+    width: 20px;
+    height: 20px;
+    float:right;/*wen add*/
+}
+
+.upload-shop1 {
+    padding: 5px 0;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    overflow: hidden;
+}
+
+.upload-shop1 li {
+    float: left
+}
+.update-tips1 {
+    margin: 1px -4px 0;
+    padding: 0 5px;
+}
+
+.say-box {
+    padding: 2px 5px;
+}
+
+.say-box textarea {
+    width: 100%;
+    height: 75px;
+    border: none;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.say-shop {
+    height: 24px;
+    margin: 0 0px; /**liu edit***/
+    padding: 5px 0;
+    line-height: 24px;
+}
+
+.say-shop .face {
+    float: left;
+    padding: 0 5px;
+}
+
+.say-shop .face img {
+    width: 24px;
+    height: 24px;
+}
+
+.say-shop .shop {
+    float: right;
+}
+
+/* End */
+
+/* Name Cards 用户名片卡 */
+.namecard1 {
+    position: relative;
+    padding: 8px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    overflow: hidden;
+}
+
+.namecard1 dt.photos {
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    position: relative;
+}
+.namecard1 dt.photos .dc-vip,
+.namecard1 dt.photos .dc-vip-active{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    width: 30px;
+    height: 18px;
+    background-image: url(../../images/vip_@1x.png);
+    background-repeat: no-repeat;
+}
+.namecard1 dt.photos .dc-vip{
+    background-position: 0 -58px;
+}
+.namecard1 dt.photos .dc-vip-active{
+    background-position: 0 -40px;
+}
+.namecard1 dt.photos,
+.namecard1 dt.photos img {
+    width: 56px;
+    height: 56px;
+}
+
+.namecard1 dt.photos .v{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+.namecard1 dt.photos .v .iconfont{
+    line-height: 100%;
+}
+
+.namecard1 dd.names {
+    margin-left: 70px !important;
+    margin-left: 67px;
+    line-height: 20px;
+}
+.namecard1 dd.names p a{
+	font-size: 12px;
+}
+.namecard1 dd.names h4{
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.namecard1 dd.names .v{
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+/* 积分数据卡 */
+.datacard1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.datacard1 .boxes {
+    float: left;
+    width: 50%;
+    line-height: 100%;
+}
+
+.datacard1 .boxes h5 {
+    padding: 8px 8px 2px;
+    font-size: 18px;
+}
+
+.datacard1 .boxes p {
+    padding: 2px 8px 8px;
+    font-size: 12px;
+}
+
+.datacard1 .boxes sup {
+    position: absolute;
+    top: 3px;
+    font-size: 12px;
+}
+
+/* End */
+
+/* Menu 菜单 */
+.menu ul {padding: 2px 0;}
+.menu li {position: relative;}
+.menu li a {
+    display: block;
+    height: 30px;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+}
+.menu li a i{padding: 0 5px 0 0;}
+.menu li a .hint,
+.menu li a .widget {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+/* End */
+
+/* Word News 文档排版 */
+/* .bookshow1 主要用于 个人中心 新鲜事模块文档展示  */
+.bookshow1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bookshow1 .moreli {
+    margin-top: 5px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.bookshow1 li {
+    position: relative;
+    padding: 10px 0 0;
+    /*
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	*/
+}
+
+.bookshow1 .bookimg {
+    position: relative;
+    float: left;
+    width: 116px;
+    height: 156px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+.bookshow1 .bookimg,
+.bookshow1 .bookimg img {
+    width: 116px;
+    height: 156px;
+}
+
+.bookshow1 .bookimg em {
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-top-left-radius: 5px;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.bookshow1 .bookdoc {
+    margin-left: 130px !important;
+    margin-left: 127px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.bookshow1 .bookdoc h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.bookshow1 .bookdoc h3 span {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.bookshow1 .bookdoc p {
+    line-height: 200%;
+}
+
+.bookshow1 .posttime {
+    clear: left;
+    height: 20px;
+    padding: 5px 0 0;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.bookshow1 .bookdoc .doclist {
+    position: relative;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.bookshow1 .bookdoc .doclist li {
+    float: left;
+    border: none;
+    padding: 0 10px 0 0;
+}
+
+.bookshow1 .bookdoc .doclist li .moredoc,
+.bookshow1 .bookdoc .doclist li .imgbox,
+.bookshow1 .bookdoc .doclist li .imgbox img {
+    width: 66px;
+    height: 86px;
+}
+
+.bookshow1 .bookdoc .doclist li .moredoc,
+.bookshow1 .bookdoc .doclist li .imgbox {
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bookshow1 .bookdoc .doclist li .txtbox {
+    width: 66px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.bookshow1 .bookdoc .doclist li .moredoc {
+    display: block;
+    width: 40px;
+    height: 76px;
+    padding-top: 10px;
+    font-family: arial;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .bookshow2 主要用于 右侧栏 推荐文档列表 */
+.bookshow2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bookshow2 li {
+    position: relative;
+    padding: 5px 0;
+}
+
+.bookshow2 .bookimg {
+    position: relative;
+    float: left;
+    width: 66px;
+    height: 86px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bookshow2 .bookimg img {
+    width: 66px;
+    height: 86px;
+}
+
+.bookshow2 .bookdoc {
+    margin-left: 80px !important;
+    margin-left: 77px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.bookshow2 .bookdoc h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.bookshow2 .bookdoc p {
+    line-height: 20px;
+}
+
+/* .bookshow3 主要用于 我的文档 中，图文并排列表 */
+.bookshow3 {
+    position: relative;
+}
+
+.bookshow3 li {
+    position: relative;
+    z-index: 0;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: -1px;
+    padding: 10px;
+    overflow: visible !important;
+}
+
+.bookshow3 li .bookmark{
+	display:none;
+	position:absolute;
+    z-index: 9;
+	top:0;
+	left:0;
+	width:24px;
+	height:24px;
+    cursor: pointer;
+}
+
+.bookshow3 li:hover,
+.bookshow3 li.current {
+    z-index: 2;
+}
+
+.bookshow3 li:hover .bookmark,
+.bookshow3 li.current .bookmark {
+    display: block;
+}
+
+.bookshow3 li .textedit {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 1px;
+}
+
+.bookshow3 li:hover .textedit {
+    display: block;
+}
+
+.bookshow3 li:hover .textedit a {
+    display: block;
+    position: relative;
+    float: left;
+    margin: 1px;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bookshow3 li:hover .textedit a .hint {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.bookshow3 li:hover .textedit a .loading,.bookshow4 li:hover .textedit a .loading {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.bookshow3 .bookimg {
+    position: relative;
+    float: left;
+    width: 116px;
+    height: 156px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bookshow3 .bookimg img {
+    width: 116px;
+    height: 156px;
+}
+
+.bookshow3 .bookimg em {
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-top-left-radius: 5px;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.bookshow3 .bookimg .mylike {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -1px;
+    width: 32px;
+    height: 32px;
+}
+
+.bookshow3 .bookdoc {
+    margin-left: 130px !important;
+    margin-left: 127px;
+    height: 160px;
+}
+
+.bookshow3 .bookdoc h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bookshow3 .bookdoc h3 img.type {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 7px 10px 0 0;
+}
+
+.bookshow3 .bookdoc h3 .uploadtime {
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.bookshow3 .bookdoc p {
+    line-height: 20px;
+}
+
+.bookshow3 .bookdoc p.outline {
+    height: 80px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/* 文档保存&分享位置 */
+.bookshow3 .position {
+    position: relative;
+    margin-top: 5px;
+}
+
+.bookshow3 .position li {
+    float: left;
+    height: 16px;
+    border: none;
+    background: none;
+    padding: 5px 20px 0 0;
+    line-height: 16px;
+}
+
+.bookshow3 .position li.name {
+    padding: 5px 5px 0 0;
+}
+
+.bookshow3 .position li.last,
+.bookshow3 .position li.last .shareIcons {
+    float: right;
+}
+
+.bookshow3 .position li.last {
+    padding: 5px 0 0 0;
+}
+
+.bookshow3 .position li.last a.prishare{
+    border: 1px solid #ccc;
+    color: #999;
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+.bookshow3 .position li.last a.prishare:hover{
+    background-color: #00a1e9;
+    border-color: #00a1e9;
+    color: #fff;
+}
+.bookshow3 .position .change{
+    text-decoration: none;
+}
+.bookshow3 .position .change i{
+    vertical-align: -2px;
+}
+
+/*  编辑按钮 16x16像素 */
+.smalledit {
+    float: right;
+    display: inline-block;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* 列表中文档编辑的特殊控制 */
+.bookshow3 .editlayout {
+    display: none;
+    border: none;
+    padding: 5px;
+}
+
+.bookshow3 .booksedit table td.name {
+    width: 60px !important;
+}
+
+/* .bookshow4 主要用于 我的文档 中，仅显示标题的列表 */
+.bookshow4 {
+    position: relative;
+    z-index: 0;
+}
+
+.bookshow4 li {
+    position: relative;
+    z-index: 0;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: -1px;
+}
+
+.bookshow4 li:hover,
+.bookshow4 li.current {
+    z-index: 2;
+}
+
+.bookshow4 .logtime {
+    height: 30px;
+    padding: 0 10px;
+    border-bottom-style: dotted;
+    border-width: 1px;
+    line-height: 30px;
+}
+
+.bookshow4 .topic {
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.bookshow4 .topic h6 {
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.bookshow4 .topic h6 img.type {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 7px 10px 0 0;
+}
+
+.bookshow4 .topic h6 .posttime {
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+.bookshow4 .topic .shop {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bookshow4 li .docedit,
+.bookshow4 li .docback,
+.bookshow4 li .docdown,
+.bookshow4 li .docbins,
+.bookshow4 li .docxiao,
+.bookshow4 li .docubao{
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.bookshow4 li .msgbox {
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* 列表中文档编辑的特殊控制 */
+.bookshow4 .editlayout {
+    display: none;
+    margin: 0 10px;
+}
+
+.bookshow4 .editlayout .close {
+    top: 10px;
+}
+
+.bookshow4 .booksedit table td.name {
+    width: 60px !important;
+}
+
+/* End */
+
+/* 文档缩略图显示 */
+.bookshow5,
+.bookshow6 {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 0;
+}
+
+.bookshow5 li {
+    float: left;
+    width: 158px;
+    height: 294px;
+    margin-right: 36px;
+}
+
+.bookshow5 li.last,
+.bookshow6 li.last {margin-right: 0;}
+
+.bookshow5 .bookimg,
+.bookshow6 .bookimg{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+.bookshow5 .bookimg,
+.bookshow5 .bookimg img {
+    width: 150px;
+    height: 200px;
+}
+
+.bookshow5 .bookdoc,
+.bookshow6 .bookdoc{
+    padding: 5px 0 0
+}
+
+.bookshow5 .bookdoc h2,
+.bookshow6 .bookdoc h2{
+    max-height: 40px;
+    padding: 0 0 5px;
+    font-size: 16px;
+    line-height: 22px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-spacing: normal;
+    break-word: break-all
+}
+
+.bookshow5 .bookdoc h2 a,
+.bookshow6 .bookdoc h2 a{
+    display: block;
+    margin-left: 26px;
+}
+
+.bookshow5 .bookdoc .typeIcon,
+.bookshow6 .bookdoc .typeIcon{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 3px 0 0 0;
+}
+
+.bookshow5 .bookdoc p,
+.bookshow6 .bookdoc p{
+    height: 20px;
+    line-height: 20px;
+}
+.bookshow6{padding: 10px 15px 0;}
+.bookshow6 li {
+    float: left;
+    width: 128px;
+    height: 254px;
+    margin:0 22px;
+}
+.bookshow6 .bookdoc h2{font-size: 14px;}
+.bookshow6 .bookimg,
+.bookshow6 .bookimg img{
+    width: 120px;
+    height: 160px;
+}
+
+.picMarquee .hd{float: right;}
+.picMarquee .hd a{cursor: pointer; text-decoration: none;}
+.picMarquee .bd{padding: 10px 25px 0;}
+.picMarquee .bd .bookshow6{padding: 0!important;}
+.picMarquee .bd .bookshow6 li{
+    margin: 0 22px;
+}
+
+/* 文档分享提示 */
+.sharemsg {
+    position: relative;
+}
+
+.sharemsg .msgbox {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: -40px;
+    left: 50%;
+    width: 380px;
+    height: 20px;
+    margin-left: -160px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.sharemsg .msgbox .close {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+/* 星级评分 Star Level */
+.starlevel {
+    overflow: hidden;
+}
+
+.starlevel li {
+    float: left;
+    height: 14px;
+    margin-right: 10px;
+    padding: 0 2px;
+    line-height: 14px;
+}
+
+.starlevel img {
+    display: inline;
+}
+
+/* End */
+
+/* User List 用户列表 */
+.usershow1 {
+    position: relative;
+}
+
+.usershow1 li {
+    position: relative;
+    padding: 5px 0;
+}
+
+.usershow1 .userpto {
+    position: relative;
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+.usershow1 .userpto,
+.usershow1 .userpto img {
+    width: 56px;
+    height: 56px;
+}
+
+.usershow1 .userdoc {
+    margin-left: 70px !important;
+    margin-left: 67px;
+    height: 60px;
+    line-height: 20px;
+}
+
+.usershow1 .userdoc h3 {
+    height: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.usershow1 .userdoc h3 em {
+    display: inline-block;
+    position: relative;
+    float: right;
+    padding: 0 0 0 18px;
+    font-style: normal;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.usershow1 .userdoc p {
+    line-height: 20px;
+}
+
+.usershow2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.usershow2 li {
+    position: relative;
+    float: left;
+    padding: 8px;
+}
+
+.usershow2 .userpto {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+.usershow2 .userpto,
+.usershow2 .userpto img {
+    width: 56px;
+    height: 56px;
+}
+
+.usershow2 .userpto .vip{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-style: solid;
+    border-width: 12px;
+    line-height: 100%;
+}
+.usershow2 .userpto .vip .v{
+    position: absolute;
+    top: -9px;
+    left: -11px;
+}
+
+.usershow2 .userdoc {
+    width: 60px;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* usershow3 朋友圈列表 */
+.usershow3,
+.usershow4 {
+    position: relative;
+}
+
+.usershow3 li,
+.usershow4 li {
+    position: relative;
+    padding: 10px 0;
+}
+
+.usershow3 .userpto {
+    position: relative;
+    float: left;
+    width: 86px;
+    height: 86px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.usershow3 .userpto,
+.usershow3 .grouppto,
+.usershow3 .userpto img,
+.usershow3 .grouppto img {
+    width: 86px;
+    height: 86px;
+}
+
+.usershow3 .userpto em {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    top: 1px;
+    right: 1px;
+    width: 16px;
+    height: 16px;
+}
+
+.usershow3 .userdoc {
+    margin-left: 100px !important;
+    margin-left: 97px;
+    height: 90px;
+    line-height: 25px;
+}
+
+.usershow3 .userdoc h3,
+.usershow4 .userdoc h3 {
+    height: 25px;
+    font-size: 16px;
+}
+
+.usershow3 .userdoc h3 em,
+.usershow4 .userdoc h3 em {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 18px;
+    font-style: normal;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.usershow3 .userdoc h3 .lv {
+    padding: 0 10px 4px;
+    font-size: 12px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.usershow3 .userdoc p,
+.usershow4 .userdoc p {
+    line-height: 25px;
+}
+
+.usershow3 .userdoc p.info,
+.usershow4 .userdoc p.info {
+    height: 40px;
+    overflow: hidden;;
+    line-height: 20px;
+}
+
+.usershow3 .nameedit,
+.usershow4 .nameedit {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+.usershow3 .nameedit input,
+.usershow4 .nameedit input{
+    float: left;
+    margin: 0 5px 0 0;
+}
+.usershow3 .nameedit .textEdit1,
+.usershow4 .nameedit .textEdit1 {
+    width: 160px;
+    height: 24px;
+    padding: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* usershow4 群组 */
+.usershow4 .userpto {
+    position: relative;
+    float: left;
+    width: 86px;
+    height: 86px;
+    padding: 2px 6px 6px 2px;
+}
+
+.usershow4 .userpto img {
+    width: 86px;
+    height: 86px;
+}
+
+.usershow4 .userpto em {
+    display: block;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    padding: 3px 6px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.usershow4 .userdoc {
+    margin-left: 104px !important;
+    margin-left: 101px;
+    height: 90px;
+    overflow: hidden;
+    line-height: 25px;
+}
+
+/* 发状态 */
+.talk {
+    position: relative;
+    padding: 10px 0 0;
+    /*
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	*/
+}
+.talk p img{
+    vertical-align: text-bottom;
+}
+.talk .posttime {
+    clear: left;
+    height: 20px;
+    padding: 5px 0 0;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.talk .cancel {
+    display: none;
+    padding: 0 0 0 20px;
+    font-size: 12px;
+}
+
+/* End */
+
+/* 列表操作：下载、收藏、分享 */
+.bookshop {
+    float: right;
+}
+
+.bookshop li {
+    float: left;
+    height: 20px;
+    border: none;
+    margin-left: 20px;
+    padding: 0 0 0 20px;
+    line-height: 20px;
+}
+
+/* End */
+
+/* Something New 新鲜事排版 */
+.something,
+.mynews,
+.friends,
+.documents,
+.interact {
+    position: relative;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 10px;
+}
+
+.something .userpto {
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+.something .userpto,
+.something .userpto img {
+    width: 56px;
+    height: 56px;
+}
+
+.something .usersay {
+    margin-left: 70px !important;
+    margin-left: 67px;
+}
+
+.something .usersay .topic {
+    font-size: 14px;
+}
+.something .usersay .topic small{
+    float: right;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.mynews .usersay,
+.interact .usersay {
+    position: relative;
+}
+
+.mynews .usersay .topic,
+.interact .usersay .topic {
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.mynews .usersay .topic small,
+.interact .usersay .topic small {
+    float: right;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.interact .usersay .interacter {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.interact .guest {
+    display: inline-block;
+    position: relative;
+}
+
+.interact .guest .arrow {
+    position: absolute;
+    z-index: 1;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -8px;
+    width: 15px;
+    height: 8px;
+}
+
+.moreread,
+.endread,
+.mymore {
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.moreread a,
+.endread a,
+.mymore a {
+    text-decoration: none;
+}
+
+.moreread img,
+.endread img,
+.mymore img{
+    position: relative;
+    top: 2px;
+}
+
+/* End */
+
+/* Comment 评论 */
+.comment1 {
+    position: relative;
+    padding-top: 5px;
+}
+
+.comment1 .list {
+    position: relative;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 5px;
+}
+
+.comment1 .list li {
+    padding: 5px 0;
+}
+
+/* 评论列表 */
+.comment1 .list .gravatar {
+    float: left;
+    width: 36px;
+    height: 36px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.comment1 .list .gravatar img {
+    width: 36px;
+    height: 36px;
+}
+
+.comment1 .list .details {
+    margin-left: 50px !important;
+    margin-left: 47px;
+    line-height: 20px;
+}
+
+.comment1 .list .details .posttime {
+    display: inline;
+}
+
+.comment1 .list .details .reply {
+    padding: 0 0 0 20px;
+}
+
+.comment1 .list .details .cancel {
+    padding: 0 0 0 10px;
+    display: none;
+}
+
+/* 评论子列表 */
+.comment1 .sublist {
+    padding: 5px 0 0 40px;
+}
+
+.comment1 .sublist .list {
+    border-top: none;
+}
+
+/* 评论表单 */
+.comment1 .itosay {
+    height: 25px;
+    padding: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 25px;
+    cursor: text;
+}
+
+.comment1 .formbox {padding: 5px 0 0;}
+.comment1 .formcss {display: none;}
+
+.comment1 .textand {
+    position: relative;
+    width: 240px;
+    height: 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+.comment1 .textand input.txt {
+    float: left;
+    width: 200px;
+    height: 25px;
+    border: none;
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.comment1 .textand input.btn {
+    float: right;
+    width: 30px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.comment1 .textwrap {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.comment1 .textwrap textarea {
+    width: 100%;
+    height: 60px;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comment1 .textand .useradd {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 27px;
+    right: -1px;
+    left: -1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.comment1 .textand .useradd li {
+    padding-bottom: 1px;
+}
+
+.comment1 .textand .useradd li a {
+    display: block;
+    height: 28px;
+    padding: 0 5px;
+    line-height: 28px;
+}
+
+.comment1 .btnwrap {
+    height: 30px;
+    padding: 5px 0 0;
+}
+
+.comment1 .btncss1 {
+    float: right;
+    width: 80px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font: 14px/30px "微软雅黑";
+    cursor: pointer;
+}
+
+.comment1 .buttoncss1,
+.comment1 .buttoncss2 {
+    float: right;
+}
+
+.comment1 .plus {
+    float: left;
+    height: 30px;
+}
+
+.comment1 .plus em.expression {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* End */
+
+/* 个人主页 */
+.mybanner {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    animation: mybanner 5s;
+    -moz-animation: mybanner 5s;	/* Firefox */
+    -webkit-animation: mybanner 5s;	/* Safari 和 Chrome */
+    -o-animation: mybanner 5s;	/* Opera */
+}
+@keyframes mybanner{
+    from {background-size: 3360px 210px;}
+    to {background-size: 3200px 200px;}
+}
+@-moz-keyframes mybanner{
+    from {background-size: 3360px 210px;}
+    to {background-size: 3200px 200px;}
+}
+
+@-webkit-keyframes mybanner{
+    from {background-size: 3360px 210px;}
+    to {background-size: 3200px 200px;}
+}
+
+@-o-keyframes mybanner{
+    from {background-size: 3360px 210px;}
+    to {background-size: 3200px 200px;}
+}
+
+/* 换肤——皮肤列表 */
+.myTemplate{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/bgb70.png);
+}
+.myTemplate .topic{
+    height: 40px;
+    border-bottom: solid 1px #333;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+}
+.myTemplate .topic h5{float: left; padding: 0 10px;}
+.myTemplate .topic .close{
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin: 12px 10px 0;
+    background: url(../images/close-16px.png) no-repeat;
+
+}
+.myTemplate .topic .close:hover{background-position: 0 -16px;}
+
+.mySkins{ 
+    background: url(../images/bgb50.png);
+    padding: 20px 0;
+    overflow: hidden;
+}
+.okSinks{
+    padding: 10px 0;
+    text-align: center;
+}
+.okSinks button{margin: 0 10px;}
+.mySkins ul{overflow: hidden;}
+.mySkins li{
+    float: left;
+    position: relative;
+    margin: 10px 20px;
+    padding: 2px;
+    background: white;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: margin-top 1s;
+    -moz-transition: margin-top 1s;
+    -webkit-transition: margin-top 1s;
+    -o-transition: margin-top 1s;
+}
+.mySkins li,
+.mySkins li img{
+    width: 120px;
+    height: 60px;
+    overflow: hidden;
+}
+.mySkins li .name{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: rgba(0,0,0,0.5);
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    -moz-transition: display 2s;
+    -webkit-transition: display 2s;
+    -o-transition: display 2s;
+}
+.mySkins li .name .iconfont{font-size: 30px;}
+
+.mySkins li:hover{background: honeydew;}
+.mySkins li:hover .name{display: block;}
+.mySkins li.current{background: #f30;}
+.mySkins li.current .name{
+    display: block;
+    color: #f30;
+}
+.mySkins li.addbg{
+    text-align: center;
+    background: rgba(0,0,0,0);
+    box-shadow: 0 0 0 2px #757575 inset;
+    font-size: 14px;
+    color: #757575;
+    overflow: visible;
+}
+.mySkins li.addbg i{
+    font-size: 20px;
+    display: block;
+    margin-top: 4px;
+}
+.mySkins .custom-color{display: none;}
+.mySkins .custom-color li,
+.mySkins .custom-color li .abg-color{
+    width: 80px;
+    height: 60px;
+}
+.mySkins .custom-color li.current{background: #fff;}
+.mySkins .custom-color li.current .name{color: #fff;}
+
+.mySkins .custom-color li .name{background: none;}
+
+
+.mybanner .mywww,
+.mybanner .likeme,
+.mybanner .editbg {
+    position: absolute;
+    z-index: 1;
+}
+
+.mybanner .mywww {
+    top: 165px;
+    right: 100px;
+}
+
+.mybanner .likeme {
+    top: 160px;
+    right: 10px;
+}
+
+.mybanner .editbg {
+    top: -5px;
+    right: 0;
+    left: 0;
+}
+.mybanner .editbg:hover{top: -1px;}
+
+.mybanner .icobtn {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+.mybanner .icobtn .iconfont{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+.orgbanner h2{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.myheader {position: relative;}
+.orgheader{padding: 0 0 10px;}
+
+.profile {position: relative;}
+
+.basicinfo {
+    position: relative;
+    margin-left: 190px;
+    padding-bottom: 10px;
+}
+
+.basicinfo dt {
+    position: relative;
+    padding: 5px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.basicinfo dt .v,
+.basicinfo dt em {
+    padding-left: 4px;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+}
+.basicinfo dt button {
+    margin-left: 30px;
+    width: 72px;
+    height: 26px;
+    border: none;
+    padding-left: 14px;
+    font-size: 12px;
+    line-height: 26px;
+    cursor: pointer;
+    outline: 0;
+	vertical-align:middle;
+	padding-top: 0;
+}
+.basicinfo dt button.current{padding: 0;}
+
+.basicinfo dt .btnx2{
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    margin-left: 30px;
+}
+.basicinfo dt .btnx2 button{
+    float: left;
+    width: 100px;
+    height: 27px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+.basicinfo dt .btnx2 .btn1{
+    cursor: default;
+}
+.basicinfo dd {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.basicinfo dd p {height: 25px;}
+.basicinfo dd p span{padding: 0 15px;}
+.basicinfo dd .cell{
+    margin-right: 5px;
+    padding-right: 7px;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+.basicinfo dd .cell:last-child{border: none;}
+.basicinfo a.level{
+    text-decoration: none;
+    color: #f90;
+}
+.basicinfo a.level:hover{color: #fa0;}
+
+.photoframe {
+    position: absolute;
+    z-index: 1;
+    top: -90px;
+    left: 10px;
+    width: 158px;
+    height: 208px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5);
+}
+.logoframe{
+    left: 0;
+    height: 158px;
+    box-shadow: none!important;
+}
+
+.photoframe .photo {
+    position: relative;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.photoframe .photo,
+.photoframe .photo img {
+    width: 156px;
+    height: 156px;
+}
+
+.photoframe .photo .enit {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.timer {padding: 3px 0 0;}
+
+.mynav {
+    position: relative;
+    z-index: 0;
+    height: 40px;
+}
+
+.mynav .nav {margin-left: 190px;}
+.orgnav .nav{margin-left: 0;}
+
+.mynav .nav li {float: left;}
+
+.mynav .nav li a {
+    display: block;
+    float: left;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.mynav .nav li.current a {
+    height: 39px;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.mynav .jialeft,
+.mynav .jiaright {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 16px;
+    height: 40px;
+}
+
+.mynav .jialeft {
+    left: -16px;
+}
+
+.mynav .jiaright {
+    right: -16px;
+}
+
+.mynav .mywww {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 10px;
+    height: 39px;
+    line-height: 39px;
+    color: #999;
+}
+
+/* End */
+
+/* 朋友圈 */
+.classify, .tabs1 {
+    position: relative;
+}
+
+.classify {
+    padding-bottom: 10px;
+}
+
+.classify .tabs1 {
+    position: relative;
+    height: 30px;
+    padding: 20px 10px 0;
+}
+
+.classify .tabs1 li {
+    position: relative;
+    float: left;
+    height: 30px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.classify .tabs1 li.current {
+    height: 28px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: default;
+}
+
+.classify .tabs1 li a {text-decoration: none;}
+
+.classify .goback {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 0;
+    height: 25px;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* 管理好友 */
+.manage {
+    position: relative;
+    height: 25px;
+    padding: 0 0 10px;
+}
+
+/*1-18影响多级分类添加到 层级太高覆盖header*/
+.grouping {
+    position: relative;
+    float: left;
+    z-index: 3;
+}
+
+.grouping em,
+.grouping big {
+    display: inline-block;
+    float: left;
+    font-style: normal;
+}
+
+.grouping em {
+    padding-left: 15px;
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.grouping big {
+    display: inline-block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* 选择自定义分类（文件夹） */
+.grouping .selectwrap {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 26px;
+    left: 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.grouping .selectwrap .close {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.selectgroup {
+    position: relative;
+    width: 320px;
+    padding: 10px 10px 0;
+    overflow: hidden;
+}
+
+.selectgroup dt {
+    position: relative;
+    clear: left;
+    height: 30px;
+    padding: 0 0 5px !important;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.selectgroup dt .shop {
+    float: right;
+    padding: 7px 0 0;
+}
+
+.selectgroup dt .edit {
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+}
+
+.selectgroup dd {
+    float: left !important;
+    width: 130px !important;
+    height: 25px;
+    padding: 0 5px;
+    line-height: 25px;
+}
+
+.addgroup {
+    clear: left;
+    margin: 0 0 5px;
+    padding: 5px 0 0;
+}
+
+.addgroup form {
+    display: none;
+    padding: 0 5px;
+    line-height: 25px;
+}
+
+.addgroup .start {
+    display: block;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.addgroup .textcss {
+    width: 160px;
+    height: 23px;
+    padding: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.addgroup .btncss {
+    width: 60px;
+    height: 25px;
+    /*margin: 0 10px;*/
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+/* 选择共享位置，如：道客巴巴 或 群组 */
+.grouping .selectshare {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 26px;
+    left: 0;
+    width: 320px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.grouping .selectshare .box {
+    position: relative;
+    padding: 5px 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    overflow: hidden;
+}
+
+.grouping .selectshare .box h6 {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.grouping .selectshare .box h6 b {
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.grouping .selectshare .box h6 a {
+    float: right;
+    font-size: 12px;
+}
+
+.grouping .selectshare .box p.msg {
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px 5px 2px 10px;
+}
+
+.grouping .selectshare .box p.msg .close {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+.smallsearch {
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.smallsearch input.textcss {
+    float: left;
+    width: 120px;
+    border: none;
+    height: 23px;
+    padding: 0 5px;
+    line-height: 23px;
+}
+
+.smallsearch input.btncss {
+    float: right;
+    width: 23px;
+    height: 23px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 文件夹管理 */
+.tblFolder {
+    width: 100%;
+}
+
+.tblFolder th,
+.tblFolder td {
+    height: 28px;
+    padding: 3px 10px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    line-height: 28px;
+}
+
+.tblFolder .bianj,
+.tblFolder .shanc {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+    vertical-align: -3px;
+}
+
+.tblFolder .textEdit1 {
+    width: 200px;
+    height: 24px;
+    padding: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.addFolder .start {
+    padding: 0 20px;
+}
+
+/* 选择日期,日历控件 */
+.calendar1,
+.calendar2{
+    width: 100px;
+    height: 23px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 2px 0 0;
+    padding: 0 5px;
+    line-height: 20px;
+}
+
+/* 添加与删除按钮 */
+.addbtn,
+.delbtn,
+.delbtnOff,
+.delbtnOn {
+ 	cursor: pointer;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    height: 25px;
+	height: 24px\9;
+    line-height: 20px;
+    padding-left: 20px;
+    width: 80px;
+}
+
+.delbtnOff {
+    cursor: default;
+}
+
+/* 普通小按钮 */
+.buttoncss1,
+.buttoncss2,
+.buttoncss3,
+.buttoncss4 {
+    width: 60px;
+    height: 25px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.buttoncss4 {
+    width: 90px;
+}
+
+/* End */
+
+.youlike {
+    position: relative;
+}
+
+.youlike .tips {
+    margin: 20px 0 30px;
+    padding: 10px 10px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 180%;
+    overflow: hidden;
+}
+
+.youlike .tips img.emotion {
+    float: left;
+}
+
+.youlike .tips p.wesay {
+    margin-left: 60px;
+    padding-top: 10px;
+}
+
+.youlike .topic {
+    height: 30px;
+    padding: 5px 0 10px;
+    border-top-style: solid;
+    border-width: 1px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.youlike .topic h4 {
+    float: left;
+    font-size: 18px;
+}
+
+.lookfor {
+    position: relative;
+}
+
+.lookfor dt {
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.lookfor dd {
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.lookfor .textbig {
+    width: 160px;
+    height: 23px;
+    padding: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 23px;
+}
+
+.lookfor select.textbig {
+    width: 172px;
+    height: 25px;
+    padding: 1px;
+    line-height: 25px;
+}
+
+.lookfor .btncss {
+    width: 50px;
+    height: 25px;
+    padding: 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* End */
+
+/* 文档模块 Documents */
+.documents {
+    padding: 10px 0 10px 10px;
+    min-height: 300px;
+}
+
+/* 文档列表内容管理，如：排序、筛选等 */
+.listmanage {
+    position: relative;
+    padding: 10px 0 0 10px;
+    +padding: 55px 0 0 10px;
+}
+
+.manage-tools {
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+}
+
+.manage-tools .toolsbox1,
+.manage-tools .toolsbox2 {
+    position: relative;
+    padding: 5px 10px;
+    line-height: 25px;
+}
+
+.manage-tools .toolsbox1 {
+    height: 28px;
+}
+
+.manage-tools .toolsbox1 h6 {
+    float: left;
+    font-size: 14px;
+}
+
+.manage-tools .toolsbox1 h6 b {
+    padding: 0 5px;
+}
+
+.manage-tools .toolsbox1 h6 a {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.manage-tools .toolsbox1 h6 a i {
+    padding: 0 2px;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.manage-tools .toolsbox1 h6 a.current {
+    cursor: default;
+}
+
+.manage-tools .toolsbox2 {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.manage-tools .toolsbox2 .viewTags1,
+.manage-tools .toolsbox2 .sorting1 {
+    float: left;
+    padding-right: 20px;
+}
+
+/* 触发更多筛选的按钮 */
+.manage-tools .siftmenu {
+    float: right;
+    height: 24px;
+    padding: 0 20px 0 10px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 更多筛选条件容器 */
+.manage-tools .siftbox {
+    clear: both;
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    border-top-style: dashed;
+    border-width: 1px;
+	display:none;
+}
+
+/* 筛选条件的模型 */
+.mode {
+    position: relative;
+    padding: 0 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.mode dt {
+    float: left;
+    width: 80px;
+}
+
+.mode dd {
+    margin-left: 80px;
+}
+
+.mode .open-more,
+.mode .close-more {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* 过滤项排列 */
+.filtrate2 {
+    position: relative;
+    padding-right: 50px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.filtrate2 li {
+    float: left;
+}
+
+.filtrate2 li a {
+    display: block;
+    float: left;
+    padding: 0 15px 0 0;
+    font-size: 14px;
+    font-weight: inherit;
+    white-space: nowrap;
+}
+
+.filtrate2 li.current a {
+    text-decoration: underline;
+}
+
+.filtrate3 {
+    position: relative;
+    max-height: 200px;
+    padding: 2px 8px;
+    overflow: auto;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* 按首字母筛选分类 */
+.nametag {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 9px;
+}
+
+.nametag li {
+    position: relative;
+    float: left;
+    margin: 0 1px;
+    padding: 0 5px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.nametag li b {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -4.5px;
+    width: 9px;
+    height: 9px;
+}
+
+.nametag li.current b {
+    display: inline-block;
+}
+
+/* 列表视图切换 */
+.viewTags1 {
+    overflow: hidden;
+}
+
+.viewTags1 li {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.viewTags1 li.current {
+    cursor: default;
+}
+
+.viewTags1 li a {
+    display: block;
+    height: 24px;
+}
+
+/* 排序方式，如：按时间、按浏览 */
+.sorting1 {
+    overflow: hidden;
+}
+
+.sorting1 li {
+    float: left;
+    height: 22px;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 10px;
+    padding: 0 5px 0 10px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.sorting1 li img {
+    float: right;
+    margin: 5px 0 0 5px;
+}
+
+/* 上传文档按钮向右浮动 */
+.newdoc {
+    float: right;
+    padding-left: 10px;
+}
+
+/* 列表顶部快捷翻页 */
+.toppaging {
+    float: right;
+}
+
+.toppaging li {
+    float: left;
+}
+
+.toppaging li.number {
+    height: 24px;
+    padding: 0 10px 0 0;
+    line-height: 24px;
+}
+
+.toppaging li.nextpage{
+    display:block;
+    height:22px;
+    margin-left:2px;
+    padding:0 10px;
+    border-style:solid;
+	border-color:#ccc;
+    border-width: 1px;
+    line-height:22px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    text-decoration: none;
+}
+.toppaging li.nextpage:hover{
+    background: none repeat scroll 0 0 #ffba00;
+    border-color: #ff9900;
+    color: white;
+	cursor:pointer;
+}
+.toppaging li.disable{color: #ccc; cursor: default;}
+.toppaging li.disable:hover{color: #ccc; cursor: default; background-color:#FFF;border:solid 1px #ddd  !important;}
+/* 私信列表 发私信 */
+.newmail {
+    display: none;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.newmail .arrow {
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: 20px;
+    width: 15px;
+    height: 9px;
+}
+
+.newmail .formcss {
+    display: block;
+}
+
+/* 私信列表与对话 */
+.mailtitle {
+    border-style: solid;
+    border-bottom-width: 2px;
+    padding: 15px 15px 10px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.mailtitle h2,
+.mailtitle h3 {
+    float: left;
+    height: 30px;
+}
+
+.mailtitle h2 {
+    font-size: 18px;
+}
+
+.mailtitle h3 {
+    font-size: 16px;
+}
+
+.maillist li {
+    padding: 10px 0;
+    border-bottom-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.maillist i {
+    float: right;
+}
+
+.maillist i {
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+/* 私信操作，例如：删除 */
+.mailshop {
+    position: relative;
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.mailshop .dorpmenu {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    right: -1px;
+    width: 80px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.mailshop .dorpmenu a {
+    display: block;
+    height: 25px;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 12px;
+}
+/* 删除对话 */
+.maildel {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.maillist .userdoc {
+    overflow: visible !important;
+}
+
+.maillist .userdoc p {
+    height: 40px;
+}
+
+.mailMsg {
+}
+
+/* 私信对话框的时间 */
+.mailTime {
+    height: 20px;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.mailTime legend {
+    padding: 0 20px;
+}
+
+/* 私信对话框 */
+.messageBox {
+    position: relative;
+}
+
+.messageBox .userpto {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.messageBox .userpto img {
+    width: 56px;
+    height: 56px;
+}
+
+.messageBox .said {
+    position: relative;
+    min-height: 30px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.messageBox .arrow {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    width: 9px;
+    height: 17px;
+}
+
+.messageBox li.he {
+    padding: 10px 80px 10px 10px;
+}
+
+.messageBox li.me {
+    padding: 10px 10px 10px 80px;
+}
+
+.messageBox li.he .userpto {
+    float: left;
+}
+
+.messageBox li.he .said {
+    margin-left: 80px;
+}
+
+.messageBox li.he .arrow {
+    left: -9px;
+}
+
+.messageBox li.me .userpto {
+    float: right;
+}
+
+.messageBox li.me .said {
+    margin-right: 80px;
+}
+
+.messageBox li.me .arrow {
+    right: -9px;
+}
+
+/* 积分与充值 */
+.scoreTop,
+.score {
+    position: relative;
+}
+
+.scoreTop {
+    height: 30px;
+    padding: 5px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: none;
+    line-height: 30px;
+}
+
+.scoreTop h3 {
+    float: left;
+    font-size: 16px;
+}
+
+.scoreTop .backShop {
+    float: right;
+}
+
+.score .assets {
+    padding: 10px 0 10px 10px;
+}
+
+.score .detail {
+    padding: 0 0 10px 10px;
+}
+
+.score .assets .tasks {
+    float: right;
+    width: 248px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+
+.score .assets .tasks .today{
+	height:105px;
+	padding:8px;/*wen edit*/
+	font-size:14px;
+	line-height:30px;
+}
+
+.score .assets .tasks .today em {
+    padding: 5px;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.score .assets .tasks .giveme {
+    height: 30px;
+    padding: 6px 10px;
+    line-height: 30px;
+}
+
+.score .assets .tasks .btncss1,
+.score .assets .tasks .btncss2 {
+    float: right;
+    width: 88px;
+    height: 28px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.score .assets .balance {
+    position: relative;
+    margin-right: 260px;
+    font-size: 14px;
+}
+
+.score .assets .valuebox {
+    padding: 10px 0;
+}
+
+.score .assets .valuebox p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.score .assets .valuebox ul {
+    overflow: hidden;
+}
+
+.score .assets .valuebox li {
+    float: left;
+    padding-right: 30px;
+    vertical-align: bottom;
+    line-height: 50px;
+}
+
+.score .assets .valuebox li.last {
+    padding-right: 0;
+}
+
+.score .assets .valuebox li.number {
+    font-size: 30px;
+    color: #f64000;
+}
+
+.score .assets .valuebox li.number i {
+    font-size: 18px;
+}
+
+.detailtab {
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.detailtab li {
+    float: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.detailtab li.current {
+    cursor: default;
+}
+
+.detailtab li small {
+    font-size: 14px;
+}
+
+.detailbox {
+    position: relative;
+}
+
+.tableScore {
+    table-layout: fixed;
+}
+
+.tableScore th,
+.tableScore td {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    -moz-user-select: none;
+}
+
+.tableScore th {
+    border-top-width: 3px;
+    padding: 15px 10px;
+    line-height: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tableScore th em {
+    padding: 0 5px;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.tableScore th em i {
+    font-size: 14px;
+}
+
+.tableScore th .chart {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+/* 二等分Table */
+.tableBisect,
+    /* 三等分Table */
+.tableTrisect,
+    /* 四等分Table */
+.tableQuartern {
+    width: 100%;
+    color: #666;
+}
+
+.tableBisect th,
+.tableBisect td {
+    width: 50%;
+}
+
+.tableTrisect th,
+.tableTrisect td {
+    width: 30%;
+}
+
+.tableQuartern th,
+.tableQuartern td {
+    width: 25%;
+}
+
+/* 列表Table */
+.tableList {
+    table-layout: fixed;
+    position: relative;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.tableList th,
+.tableList td {
+    /*position: relative;*/
+    z-index: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;/*Not working in FF*/
+}
+.ovhide td{overflow: hidden;}
+
+.tableList caption {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: none;
+    font-size: 14px;
+}
+
+.tableList .paralleling {
+    position: relative;
+    float: left;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tableList .paralleling li {
+    float: left;
+    padding: 0 10px;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.tableList .paralleling li.last {
+    border: none;
+}
+
+.tableList caption .menu {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.tableList caption .search {
+    position: relative;
+    clear: left;
+    padding: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    text-align: left;
+}
+
+.tableList thead {font-size: 14px;}
+
+.tableList .times {width: 120px;}
+.tableList .number {width: 100px; text-align: right;}
+.tableList .status {width: 60px; text-align: center;}
+.tableList .tdw30  {width: 30px; text-align: center;}
+.tableList .tdw100 {width: 100px;}
+.tableList .tdw100 {width: 105px;}
+.tableList .tdw160 {width: 160px;}
+
+.tableList .join-td {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    border-top: none;
+    overflow: auto;
+}
+.tableList .errormsg {
+    position: absolute;
+    top: -6px;
+    right: 1px;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+}
+.tableList .errormsg2 {
+    margin-top: -8px;
+    padding: 0 10px;
+}
+.tableList a.shop,
+.tableList a.shop:hover{text-decoration: none;}
+.tableList a.shop{opacity: 0.5;}
+.tableList a.shop:hover{opacity: 1;}
+
+.tableUsers td{
+    height: 40px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.tableUsers .userpto,
+.tableUsers .userpto img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.tableUsers .userpto img:hover{opacity: 0.75;}
+
+
+
+/* 模拟 Select 设计 */
+.sltDesign1 {
+    position: relative;
+    float: left;
+    text-align: left;
+}
+
+.sltDesign1 dt {
+    height: 20px;
+    padding: 10px 30px 10px 10px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.sltDesign1 dd {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 30px;
+    left: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    padding: 5px 0 0;
+    line-height: 25px;
+}
+
+.sltDesign1 dd p {
+    height: 25px;
+    padding: 0 30px 0 10px;
+    cursor: pointer;
+}
+
+.scorelist1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.scorelist1 li {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scorelist1 li em {
+    padding: 0 5px 0 0;
+    font-style: normal;
+}
+
+/*------------------------------个人主页细节------------------------------*/
+/* 个人主页 馆藏 布局 */
+.myRightMenu {
+    padding: 1px 0 1px;
+}
+.myRightMenu i{padding: 0 5px 0 0;}
+
+.myDocSource {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+
+.myFolder dd {padding: 0;}
+
+.myFolder ul {
+    height: 300px;
+    overflow: hidden;
+}
+
+.myFolder ul.open {
+    height: auto;
+    overflow: visible;
+}
+
+.myDocSource li,
+.myFolder li {
+    height: 28px;
+    margin: 2px 0;
+    padding: 0 10px 0 10px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+/*10-26*/
+/*.myFolder li a {float: left;}*/
+
+.myFolder li input.text,
+.myFolder li input.butn,
+.myFolder li .selt {
+    height: 24px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 1px 0;
+    padding: 0 5px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.myFolder li input.text {
+    float: left;
+    width: 150px;
+}
+
+.myFolder li input.butn {
+    float: right;
+    height: 26px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.myFolder li .selt {
+    float: left;
+    height: 26px;
+    padding: 0;
+    border-left: none;
+}
+
+.myFolder li .data {
+    padding: 0 10px;
+}
+
+.myFolder li .shop {
+    display: none;
+    float: right;
+    height: 30px;
+}
+
+.myFolder li .shop .edit {
+    display: block;
+    float: right;
+    margin: 7px 0 0;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myFolder .moreFolder {
+    border-top-style: solid;
+    border-width: 1px;
+    margin-top: 1px;
+
+}
+
+.myFolder .moreFolder a {
+    display: block;
+    height: 20px;
+}
+
+.myDocList {
+    padding: 0 0 10px 0;
+}
+
+.myDocList .listmanage {
+    padding: 0 0 10px;
+}
+
+/* End */
+
+/* 个人主页 状态 */
+.itoSpeak {
+    padding: 0;
+}
+
+.itoSpeak .fast-say {
+    border-style: solid;
+    border-width: 1px;
+}
+.wantto .itoSpeak .fast-say{
+    border-style: solid;
+    border-width: 0px !important;
+}
+.itoSpeak .say-box textarea {
+    width: 100%;
+    height: 75px;
+    border: none;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.itoSpeak .say-shop {
+    margin: 0 0;
+    padding: 5px 0;
+}
+
+.isaidTopic {
+    margin: 0 0 20px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.isaidTopic h5 {
+    height: 45px;
+    margin-left: 60px;
+    padding-left: 20px;
+}
+
+.isaidTopic .year {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 45px;
+    text-align: center;
+}
+
+.isaid {position: relative;}
+.isaid li {padding: 0 0 20px;}
+
+.isaid li h6 {padding-left: 80px;}
+
+.isaid .myphoto {
+    position: relative;
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.isaid .myphoto img {
+    width: 56px;
+    height: 56px;
+}
+
+.isaid .itoSpeak,
+.isaid .theword {
+    position: relative;
+    margin-left: 80px;
+    min-height: 30px;
+}
+
+.isaid .theword {
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.isaid .theword .word {
+    border: none;
+}
+
+.isaid .theword .tag {
+    height: 20px;
+    padding: 5px 0 0;
+    line-height: 20px;
+}
+
+.isaid .theword .time {
+    float: left;
+}
+
+.isaid .theword .shop {
+    float: right;
+}
+
+.isaid .theword .shop a {
+    padding-left: 10px;
+}
+
+.isaid .theword .arrow {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: -9px;
+    width: 9px;
+    height: 17px;
+}
+
+/* 个人主页 个人资料 */
+.aboutme {
+    padding-right: 10px;
+}
+
+.myprofile {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.myprofile dt,
+.myprofile dt h5,
+.myprofile dt em {
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+}
+
+.myprofile dd {
+    padding: 5px 0;
+}
+
+.myprofile dt h5 {
+    float: left;
+    border-left-style: solid;
+    border-width: 3px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.myprofile dt h5 span {
+    padding: 0 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.myprofile dt em,
+.myprofile dt em a {
+    display: block;
+    height: 35px;
+}
+
+.myprofile dt em {
+    float: right;
+}
+
+.myprofile dt em a {
+    padding: 0 20px;
+    font-style: normal;
+}
+
+.myprofile .addInfoBtn {
+    height: 30px;
+    margin: 5px 0;
+    padding: 2px 10px 2px 50px;
+    line-height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.myprofile .addInfoBox {
+    display: none;
+    margin: 0 0 10px;
+    padding: 20px;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.myprofile .myTags {
+    position: relative;
+}
+
+.myprofile .myTags li {
+    float: left;
+    height: 21px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    margin: 2px 10px 2px 0;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.myprofile .myTags li.toggleTags {
+    padding: 0 10px;
+    border: none;
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+}
+
+.myprofile .myTags li .delete,
+.myprofile .myTags li .newtag {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 1px 0 0;
+}
+
+.myprofile .myTagsShow li {
+    padding: 0 10px 0 10px;
+}
+
+.myprofile .myTagsNew li {
+    cursor: pointer;
+}
+
+.myTable {
+    width: 100%;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.myTable td {
+    padding: 5px 10px;
+}
+
+.myTable .name {
+    width: 80px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.myTable .tips {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.myTable .privacy {
+    float: right;
+}
+
+.myTable .editPart {
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.myTable .analog-select {
+    width: 110px;
+}
+
+.myLevel {
+    position: relative;
+}
+
+.myLevelCard,
+.myLevelCard .myPhoto {
+    position: relative;
+}
+
+.myLevelCard {
+    padding: 10px 0 10px;
+}
+
+.myLevelCard .myPhoto,
+.myLevelCard .myPhoto img,
+.myLevelCard .radiusCss {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.myLevelCard .radiusCss {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.myLevelCard .myLevelTxt {
+    height: 30px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.myLevelPlan {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+    height: 16px;
+}
+
+.myLevelPlan span.bg1 {
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+.myLevelTips {
+    padding: 10px 0 0;
+}
+
+.myLevelTips .newtask {
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/*  */
+.mylogs .listmanage {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.bdSug_wpr {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #817f82;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 9999;
+}
+.bdSug_wpr table {
+    background: none repeat scroll 0 0 #fff;
+    cursor: default;
+    padding: 0;
+    width: 100%;
+}
+.bdSug_wpr tr {
+    margin: 0;
+    padding: 0;
+}
+.bdSug_wpr td {
+    font: 14px verdana;
+    margin: 0;
+    padding: 2px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    vertical-align: middle;
+}
+.bdSug_mo {
+    background: none repeat scroll 0 0 #36c;
+    color: #fff;
+}
+.bdSug_app {
+    background: none repeat scroll 0 0 #fff;
+    margin: 0;
+    padding: 0;
+}
+.bdSug_pre {
+    margin: 0;
+    padding: 0;
+}
+.bdsug_copy {
+    background: url("http://www.baidu.com/img/bd.gif") no-repeat scroll 0 0 transparent;
+    color: #77c;
+    font-size: 13px;
+    margin: 0;
+    padding: 0 2px 0 16px;
+    text-decoration: none;
+}
+.bdSug_wpr {
+    border: 1px solid gray;
+    color: #000;
+    left: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 9;
+}
+.bdSug_wpr td {
+    font-family: 宋体;
+    font-size: 13px;
+}
+.bdSug_mo {
+    background-color: #03c;
+    color: #fff;
+}
+
+/* 警告框 Alert */
+.alert{
+    position: relative;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/* 警告框中的关闭按钮 */
+.alert .close {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    cursor: pointer;
+    background: transparent;
+}
+.alert .close:hover,
+.alert .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+/* 警告框中的超链接 */
+.alert .alert-link {font-weight: bold;}
+
+/* 有关闭按钮警告框 */
+.alert-dismissible {padding-right: 35px;}
+.alert-dismissible .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 0px 2px 4px;
+    text-align: center;
+    line-height: 20px;
+    color: inherit;
+}
+/* 警告-黄色 */
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-warning .alert-link {color: #66512c;}
+/* 成功-绿色 */
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-success .alert-link {color: #2b542c;}
+/* 消息-蓝色 */
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.alert-info .alert-link {color: #245269;}
+/* 危险-红色 */
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert-danger .alert-link {color: #843534;}
+/*分享到群组*/
+.selectwrap ul{
+    max-height: 93px;
+    padding: 10px;
+    border:solid 1px #ccc;
+    background: white;
+    overflow: auto;
+    width: 265px;
+}
+.selectwrap ul li{
+    float: left;
+    width: 50%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+}
+
+/*1-12 reading category*/
+.relativex{
+    position: relative;
+    z-index: 3;
+}
+.item-category{
+    color: #666;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-right: 22px;
+    text-align: right;
+    width: 90px;
+}
+
+.new-category-top{
+    position: relative;
+    z-index: 2;
+}
+.btn-category{
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-category i{
+    font-size: 14px;
+    color: #999;
+}
+.btn-category:hover i{
+    color: #00a1e9;
+}
+.category-text{
+    color: #f60;
+}
+.category-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/secondimgs/categorys/arrdown.png) no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+    vertical-align: -3px;
+    transition:transform .01s;
+}
+.category-icon.cur{
+    transform:rotate(-180deg);
+}
+.category-panel{
+    position: absolute;
+    top: 181px;
+    left: 140px;
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    border-top: none;
+    z-index: 1;
+}
+.category-panel.category-panel-add{
+    left: 0;
+    top: 35px;
+}
+.category-panel ul{
+    list-style: none;
+}
+.category-item{
+    width: 136px;
+    height: 170px;
+    float: left;
+    overflow-y:scroll;
+}
+.category-item p{
+    padding: 0 5px;
+    height: 24px;
+    line-height: 24px;
+    cursor: default;
+    font-size: 12px;
+    color: #666;    
+}
+
+.category-item p:hover{
+    background: #dcefea url(../images/secondimgs/categorys/spr_upload_179061c.png) no-repeat scroll 100px -380px;
+}
+.category-item p.selected{
+    color: #fff;
+    /*background: #316ac5 url("spr_upload_179061c.png") no-repeat scroll 100px -350px;*/
+    background: #00a1e9 url(../images/secondimgs/categorys/spr_upload_179061c.png) no-repeat scroll 100px -350px;
+}
+.category-item p.last{
+    background-image: none;
+}
+.input-category{
+    background: #fdfdfd none repeat scroll 0 0;
+    border-color: #bebebe #d5d5d5 #d5d5d5 #bebebe;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    font-size: 14px;
+    outline: 0 none;
+    padding: 5px;
+    width: 364px;
+}
+.category-submit{
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #13ae2f;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+/*08-15 usercenter-corpus*/
+.corpus-center{
+    padding: 20px 0 0 10px;
+}
+.corpus-center-header{
+    overflow: hidden;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+.classify .tabs1 a.corpus-center-link{
+    color: #00a1e9;
+    font-size: 14px;
+}
+.classify .tabs1 li.add-ccorpus{
+    float: right;
+    padding: 0;
+}
+.corpus-tab li{
+    float: left;
+    height: 43px;
+    line-height: 43px;
+    padding: 0 39px;
+    font-size: 16px;
+    border-right: 1px solid #ccc;
+    color: #999;
+    cursor: pointer;
+}
+.corpus-tab li:hover{
+    color: #00a1e9;
+}
+.corpus-tab li.current{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+.corpus-center-table{
+    display: none;
+}
+.corpus-center .tableList{
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+}
+.corpus-center .tableList thead{
+    background: #fff;
+}
+.corpus-center .tableList tbody{
+    font-size: 14px;
+}
+.corpus-center .tableList tbody tr:nth-of-type(2n+1){
+    background: #f9f9f9;
+}
+.corpus-center .tableList td,
+.corpus-center .tableList th{
+    border-bottom: none;
+    padding: 10px;
+}
+
+
+/*个人中心leftmenu会员*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min--moz-device-pixel-ratio: 2),only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (min-device-pixel-ratio: 2) {
+.namecard1 dt.photos .dc-vip,
+.namecard1 dt.photos .dc-vip-active{
+    background-image: url(../../images/vip_@2x.png);
+    background-size: 100px 100px;
+}

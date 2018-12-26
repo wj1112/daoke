@@ -1,0 +1,1228 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content .mainpart{background:#eee;}
+
+.leftmenu{background:#eee;}
+
+.mainbody,
+.mybody{background:white;}
+
+/* 侧边栏中的盒子模型 */
+.minbox1 .textbox,
+.minbox2 .textbox{
+    color: #666;
+}
+.minbox1 .textbox h5,
+.minbox2 .textbox h5{
+    border-color: #ccc;
+}
+.minbox1{border-bottom-color:#ccc;}
+.minbox1 .topic .more{color:#999;}
+
+.minbox2{border-color:#ccc;}
+.minbox2 .topic{background:#eee;}
+.minbox2 .topic .more{float:right;}
+.minbox2 .topic span.more{color: #999;}
+
+.minbox2 .topic .extend dt{
+    background-image: url(../../images/selection.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.minbox2 .topic .extend:hover dt{
+    background-color: #ddd;
+    background-position: 0 -35px;
+}
+.minbox2 .topic .extend dd{
+    background: #ddd;
+}
+.minbox2 .topic .extend ul li{
+    border-color: #fff;
+    color: #666;
+}
+.minbox2 .topic .extend ul li:hover{
+    background: url(../../images/selection.png) no-repeat right -100px;
+}
+.minbox2 .topic .extend ul li.current{
+    background: url(../../images/selection.png) no-repeat right -70px;
+    color: #22ac38;
+}
+
+.maxbox1{
+    border-color: #ccc;
+}
+.maxbox1 .topic h4{
+}
+
+/* Update 中间更新 */
+.update1,
+.update3{border-color:#aaa;}
+.publish .setting li em{ background:url(../../images/pointer.gif) no-repeat;}
+.wantto{border-color:#999; color:#999;}
+.wantto .goto{background:#eee; color:#333;}
+/* End */
+
+
+/* 快速上传文档 & 发状态 */
+.upload-list1{overflow: hidden;}
+.upload-list1 li{color: #333;overflow:hidden;}
+.upload-list1 li .plan{color:#999;}
+.upload-list1 li .del{background:url(../../images/close-small.png) no-repeat;}
+.upload-list1 li .del:hover{background-position:0 -20px;}
+.upload-shop1{border-color:#ccc;}
+.update-tips1{background:#eee;}
+
+.say-shop{background: #eee;}
+/* End */
+
+/* Name Cards 用户名片卡 */
+.namecard1{border: none;}
+.namecard1 dt.photos{border-color:#999; background:white;}
+.namecard1 dd.names h4 a{color:#333;}
+/*信息完善进度条*/
+.inforange-contain{
+    overflow: hidden;
+}
+.inforange-bar{
+	float: left;
+    width: 65%;
+    height: 8px;
+    margin-left: 7px;
+    position: relative;
+    margin-top: 6px;
+}
+.inforange-bg{
+	width: 100%;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    background-color: #DDDDDD;
+    border-radius: 4px;
+}
+.inforange-co{
+	width: 0%;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    background-color: #ff9900;
+    border-radius: 4px;
+}
+.inforange-btn{
+	padding: 0 4px;
+    line-height: 17px;
+    font-size: 12px;
+    color: #666666;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    float: right;
+    background-color: #fff;
+    margin-right: 7px;
+}
+.lv-tips{
+    padding-bottom: 6px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.lv-tips a{
+    color: #333;
+    font-size: 14px;
+}
+/* 积分数据卡 */
+.datacard1{background:url(../../images/hrbg1.png) repeat-y center;}
+.datacard1 .boxes sup{color: #999;}
+/* End */
+
+
+/* Menu 菜单 */
+.menu li a{color:#666;}
+.menu li a:hover{background:#dbe9ec; color: #5991ab;}
+.menu li.current a{background:#91999d; color:#fff;}
+
+.menu li a i{color: #999;}
+.menu li a:hover i{color: #5991ab;}
+.menu li.current a i{color: #fff;}
+
+.menu li a .hint{background: url(../../images/icons/hint.png) no-repeat center;}
+.menu li a:hover .widget{background: url(../../images/icons/wrench2.png) no-repeat center;}
+
+.menu li.current .widget,
+.menu li.current a:hover .widget,
+.menu li a .widget{background: url(../../images/icons/wrench1.png) no-repeat center;}
+
+
+/* End */
+
+/* Word News 文档排版 */
+.bookshow1 .moreli{background: #f6f6f6;}
+.bookshow1 li{border-bottom-color:#eee;}
+.bookshow1 .bookimg{border-color:#ccc; background:white;}
+.bookshow1 .bookimg em{background:rgba(0,0,0,0.5); color:white;}
+.bookshow1 .posttime{color:#999;}
+.bookshow2 .bookimg{border-color:#ccc;}
+.bookshow2 .bookdoc p{color:#666;}
+.bookshow3 {border-color:#eee;}
+.bookshow3 li{border-color:#eee; background:white;}
+.bookshow3>li:hover{border-color:#f64000;}/*wen edit*/
+.bookshow3 li.current{border-color:#f64000;}
+.bookshow3 li .bookmark{background:url(../../images/bookmark-click.png) no-repeat;}
+.bookshow3 li .bookmark:hover{background-position: 0 -24px;}/*wen add*/
+.bookshow3 li.current .bookmark{background-position: 0 -48px;}
+.bookshow3 .position a{text-decoration:none;}
+.bookshow3 li.current .booksedit{background: #f9f9f9;}
+
+.bookshow1 .bookdoc .doclist li .imgbox{border-color: #ccc;}
+.bookshow1 .bookdoc .doclist li .moredoc{border-color: #eee; color: #ccc;}
+
+.bookshow3 li:hover .textedit a{
+	border-color:#eee;
+	background:url(../../images/TextEdit.png) no-repeat;
+}
+.bookshow3 li:hover .textedit a:hover{border-color:#ccc;}
+
+.bookshow3 li:hover .textedit a.edit{background-position: 0 0;}
+.bookshow3 li:hover .textedit a.del {background-position: 0 -60px;}
+.bookshow3 li:hover .textedit a.down{background-position: 0 -120px;}
+.bookshow3 li:hover .textedit a.back{background-position: 0 -180px;}
+.bookshow3 li:hover .textedit a.xiao{background-position: 0 -240px;}
+.bookshow3 li:hover .textedit a.ubao{background-position: 0 -300px;}
+.bookshow3 li:hover .textedit a.replace{background-position: 0 -360px;}
+.bookshow3 li:hover .textedit a.edit:hover{background-position: 0 -30px;}
+.bookshow3 li:hover .textedit a.del:hover {background-position: 0 -90px;}
+.bookshow3 li:hover .textedit a.down:hover{background-position: 0 -150px;}
+.bookshow3 li:hover .textedit a.back:hover{background-position: 0 -210px;}
+.bookshow3 li:hover .textedit a.xiao:hover {background-position: 0 -270px;}
+.bookshow3 li:hover .textedit a.ubao:hover{background-position: 0 -330px;}
+.bookshow3 li:hover .textedit a.replace:hover{background-position: 0 -390px;}
+
+.bookshow3 li:hover .textedit a .hint{background: url(../../images/icons/hint.png) no-repeat center;}
+.bookshow3 li:hover .textedit a .loading,.bookshow4 li:hover .textedit a .loading{background: white url(../../images/spinner.gif) no-repeat center;}
+
+.bookshow3 .bookimg{border-color:#ccc; background:white;}
+.bookshow3 .bookimg em{background:rgba(0,0,0,0.5); color:white;}
+.bookshow3 .posttime{color:#999;}
+
+.bookshow3 .position .change{color: #ccc;}
+.bookshow3 .position .change:hover{color: #00a1e9;}
+.usershow3 .nameedit{
+    border-color: #ccc;
+    background: white;
+}
+.usershow3 .nameedit .textEdit1,
+.usershow4 .nameedit .textEdit1 {border-color:#ccc; background:white;}
+
+
+
+/*  编辑按钮 16x16像素 */
+.smalledit{background: url(../../images/EditTool-16px.png) no-repeat;}
+.smalledit:hover{background-position: 0 -16px;}
+
+
+/* .bookshow4 主要用于 我的文档 中，仅显示标题的列表 */
+.bookshow4{background: white;}
+.bookshow4 li{border-color: #eee;}
+.bookshow4 li:hover{border-color:#999;}
+.bookshow4 li.current{border-color:#faa77f; background: #fff5f2;}
+
+.bookshow4 .logtime{border-color: #eee; color: #999;}
+
+.bookshow4 .topic h6 a{color: #666;}
+.bookshow4 .topic h6 a:hover{color: #00a1e9;}
+.bookshow4 .topic h6 .posttime{color: #999;}
+
+.bookshow4 .topic .shop{color: #999;}
+
+.bookshow4 li .docedit,
+.bookshow4 li .docback,
+.bookshow4 li .docbins,
+.bookshow4 li .docdown,
+.bookshow4 li .docxiao,
+.bookshow4 li .docubao{background: url(../../images/TextEdit.png) no-repeat;}
+.bookshow4 li .docedit{background-position: 0 0;}
+.bookshow4 li .docbins{background-position: 0 -60px;}
+.bookshow4 li .docdown{background-position: 0 -120px;}
+.bookshow4 li .docback{background-position: 0 -180px;}
+.bookshow4 li .docxiao{background-position: 0 -240px;}
+.bookshow4 li .docubao{background-position: 0 -300px;}
+.bookshow4 li .docedit:hover{background-position: 0 -30px;}
+.bookshow4 li .docbins:hover{background-position: 0 -90px;}
+.bookshow4 li .docdown:hover{background-position: 0 -150px;}
+.bookshow4 li .docback:hover{background-position: 0 -210px;}
+.bookshow4 li .docxiao:hover {background-position: 0 -270px;}
+.bookshow4 li .docubao:hover{background-position: 0 -330px;}
+
+/* 文档缩略图显示 */
+.bookshow5 .bookimg,
+.bookshow6 .bookimg{border-color: #ccc;}
+.bookshow5 .bookdoc h2 a,
+.bookshow6 .bookdoc h2 a{color: #333;}
+.bookshow5 .bookdoc p,
+.bookshow6 .bookdoc p{color: #999;}
+/* End */
+
+/* 文档分享提示 */
+.sharemsg .msgbox{
+    border-color: #ffe4b8;
+    background: #fffef2;
+    color: #f64000;
+	width:120px;
+	position:relative;
+	left:135px;
+	top:-50px;
+}
+.sharemsg .msgbox .close{background: url(../../images/close-small.png) no-repeat 0 -20px;}
+
+
+
+/* User List 用户列表 */
+.usershow1 .userpto,
+.usershow3 .userpto{border-color:#ccc; background:white;}
+.usershow1 .userpto:hover{border-color:#999;}
+.usershow1 .userdoc h3 a,
+.usershow3 .userdoc h3 a{color:#333;}
+.usershow1 .userdoc h3 em{background:white url(../../images/icons/add.png) no-repeat left center; color:#999;}
+.usershow1 .userdoc h3 em:hover{color:#666;}
+.usershow1 .userdoc h3 em.add{background:url(../../images/icons/add.png) no-repeat left center; color:#999;}
+.usershow1 .userdoc h3 em.del{background:url(../../images/icons/del.png) no-repeat left center; color:#999;}
+.usershow1 .userdoc h3 em:hover{color:#666;}
+.usershow1 .userdoc p{color:#999;}
+.usershow3 .userdoc p{color:#666;}
+
+.usershow2 .userpto{border-color:#ccc; background:white;}
+.usershow2 .userpto:hover{border-color:#999;}
+.usershow2 .userpto .vip{
+    border-color: transparent;
+    color: white;
+}
+.usershow2 .userpto .vip a{color: white;}
+.usershow2 .userpto .vip-user{
+    border-top-color: #f60;
+    border-left-color: #f60;
+}
+.usershow2 .userpto .vip-org{
+    border-top-color: #00a1e9;
+    border-left-color: #00a1e9;
+}
+
+.usershow3 .current{border-color:#f90; background:#f90;}
+.usershow3 .userpto em{background:url(../../images/icons/check-orange.png) no-repeat;}
+.usershow3 .current em{display:inline-block;}
+.usershow3 .userdoc h3 em,
+.usershow4 .userdoc h3 em{color:#999;}
+.usershow3 .userdoc h3 em:hover,
+.usershow4 .userdoc h3 em:hover{color:#666;}
+.usershow3 .userdoc h3 em.del,
+.usershow4 .userdoc h3 em.del{background:url(../../images/icons/del.png) no-repeat left center;}
+.usershow3 .userdoc h3 em.add,
+.usershow4 .userdoc h3 em.add{background:url(../../images/icons/add.png) no-repeat left center;}
+.usershow3 .userdoc h3 em.bei,
+.usershow4 .userdoc h3 em.bei{background:url(../../images/icons/bei.png) no-repeat left center;}
+.usershow3 .userdoc h3 .lv{color:#f90;}
+
+.usershow4 .userpto{background:url(../../images/groupimg-bg.png) no-repeat;}
+.usershow4 .userpto em{
+	border-top-left-radius:5px;
+	background:rgba(0,0,0,0.5);
+	color:white;
+}
+
+/* End */
+
+
+/* 发状态 */
+.talk{border-bottom-color:#eee;}
+.talk .posttime{color:#999;}
+.talk .cancel{color: #999;}
+.talk .cancel:hover{color: #ff7f7f;}
+/* End */
+
+
+/* 列表操作：下载、收藏、分享 */
+.bookshop{float:right;}
+.bookshop li{border:none; background:url(../../images/wordshop-icons.png) no-repeat;}
+.bookshop li a{color:#999; text-decoration: none;}
+.bookshop li a:hover{color:#33bbd9;}
+.bookshop li.like {background-position:0 0;}
+.bookshop li.share{background-position:0 -40px;}
+.bookshop li.down {background-position:0 -80px;}
+.bookshop li.like:hover {background-position:0 -20px;}
+.bookshop li.share:hover{background-position:0 -60px;}
+.bookshop li.down:hover {background-position:0 -100px;}
+/* End */
+
+
+/* Something New 新鲜事排版 */
+.something,
+.mynews,
+.interact{border-color:#aaa;}
+.something .userpto{border-color:#ccc; background:white;}
+.moreread,
+.endread,
+.mymore{color:#999;}
+.moreread:hover{color:#33bbd9;}
+.interact .usersay .interacter{border-color: #ccc;}
+
+.interact .guest .arrow{background: url(../../images/pointer.gif) no-repeat;}
+.something .usersay .topic small,
+.mynews .usersay .topic small,
+.interact .usersay .topic small{color: #aaa;}
+.something .usersay .topic small:hover,
+.mynews .usersay .topic small:hover,
+.interact .usersay .topic small:hover{color: #666;}
+/* End */
+
+/* Comment 评论 */
+.comment1 .list{border-color:#eee;}
+.comment1 .list .gravatar{border-color:#ccc; background:white;}
+.comment1 .list .details .posttime,
+.comment1 .list .details .reply{color:#999;}
+.comment1 .list .details .reply:hover{color:#33bbd9;}
+.comment1 .list .details .cancel{color: #999;}
+.comment1 .list .details .cancel:hover{color: #ff7f7f;}
+/* 评论表单 */
+.comment1 .itosay{border-color:#eee; color:#999;}
+.comment1 .textand{border-color:#ccc;}
+.comment1 .textand input.btn{background: #eee url(../../images/icons/user16-gray.png) no-repeat center;}
+.comment1 .textand input.btn:hover,
+.comment1 .textand input.btn:active{background: #fc0 url(../../images/icons/user16-white.png) no-repeat center;}
+
+.comment1 .textand .useradd{border-color:#ccc; background: white;}
+.comment1 .textand .useradd li a{color: #666;}
+.comment1 .textand .useradd li a:hover{background: #fc0; color: white;}
+
+
+.comment1 .textwrap{border-color:#ccc;}
+.comment1 .btncss1{background:url(../../images/button2-bg.png) no-repeat; color:white;}
+.comment1 .btncss1:hover{background-position:-80px 0;}
+.comment1 .btncss1:active{background-position:-160px 0;}
+.comment1 .plus em.expression{background:url(../../images/icons/face.png) no-repeat center center;}
+
+
+/* End */
+
+
+
+
+/* 个人主页 */
+
+.mybanner{
+    background-image:url(../../images/banner/banner01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mybanner .likeme a img{opacity:0.7;}
+.mybanner .likeme a:hover img{opacity:1;}
+
+.orgbanner{background-image:url(../../images/banner/banner07.jpg);}
+.orgbanner h2{
+    color: white;
+}
+
+
+.basicinfo dt em{color:#999;}
+.basicinfo dt button{background: url(../../images/Attention-bg.png) no-repeat; color: #666;}
+.basicinfo dt button:hover{color: #ff7373;}
+.basicinfo dt button.current{
+    background-position: 0 -26px;
+    color: #999;
+}
+.basicinfo dt button.current:hover{color: #00a1e9;}
+
+.basicinfo dd{color:#666;}
+
+.basicinfo dd .lv {
+	padding:2px;
+    color: #f90 !important;
+}
+.basicinfo dd p span{color: #ccc;}
+
+.basicinfo dt .btnx2 button{
+    background: url(../../images/verify/verify-btnbg2.png) no-repeat;
+}
+.basicinfo dt .btnx2 .btn1{
+    color: white;
+}
+.basicinfo dt .btnx2 .btn2{
+    background-position: -100px 0;
+    color: #00a1e9;
+}
+.basicinfo dd .cell{border-color: #ddd;}
+.basicinfo a.level{
+    text-decoration: none;
+    color: #f90;
+}
+.basicinfo a.level:hover{color: #fa0;}
+.photoframe{
+	border-color:#ccc;
+	background:white;
+	box-shadow:0 -1px 5px rgba(0,0,0,0.5);
+}
+.photoframe .photo .enit{background:rgba(0,0,0,0.5);}
+.photoframe .photo .enit a{
+	padding-left:30px;
+	background:url(../../images/icons/editpto.png) no-repeat left;
+	color:white;
+}
+
+
+.mynav{background:#eee;}
+.mynav .nav li a{color:#666;}
+.mynav .nav li.current a{
+	border-top-color:#eee;
+	background:white;
+	color:#333;
+}
+
+.mynav .jialeft,
+.mynav .jiaright{background:url(../../images/mynavjia-bg.png) no-repeat;}
+.mynav .jialeft{background-position:0 0;}
+.mynav .jiaright{background-position:-16px 0;}
+/* End */
+
+
+/* 朋友圈 */
+.classify .tabs1{background:url(../../images/hrbg1.png) repeat-x bottom;}
+.classify .tabs1 li.current{
+	border-color:#ccc;
+	border-bottom-color:white;
+}
+.classify .tabs1 a{color:#333;}
+.classify .tabs1 a:hover{color:#00a1e9;}
+.classify .goback{background:#eee;}
+.classify .goback a{color:#666;}
+.classify .goback:hover{background:#ff7f00;}
+.classify .goback:hover a{color:white;}
+
+.friends{border-color:#999;}
+
+/* 管理好友 */
+.smallsearch{border-color:#ccc;}
+.smallsearch input.btncss{background:url(../../images/icons/zoom.png) no-repeat center center;}
+.grouping em{background:url(../../images/addto-bg.png) no-repeat; color:#999;}
+.grouping em.activate{
+	background-position:0 -25px;
+	color:white;
+	cursor:pointer;
+}
+.grouping big{
+	background:url(../../images/pointer-orange.png) no-repeat center right;
+	padding-right:15px;
+	color:#f60;
+	cursor:pointer;
+}
+.grouping big.current{}
+.grouping big:hover{text-decoration:underline;}
+
+/* 选择自定义分类（文件夹） */
+.grouping .selectwrap,
+.grouping .selectshare{
+	border-color:#ccc;
+	background:white;
+	box-shadow:0 1px 3px rgba(0,0,0,0.3);
+}
+.grouping .selectwrap .close{background: url(../../images/close-16px.png) no-repeat}
+.grouping .selectwrap .close:hover{background-position: 0 -16px;}
+
+.selectgroup dt .edit{background: url(../../images/EditTool-16px.png) no-repeat;}
+.selectgroup dt .edit:hover{background-position: 0 -16px;}
+.selectgroup dd:hover{background:#eee;}
+.addgroup .start:hover{background:#eee;}
+.addgroup .textcss{border-color:#ccc;}
+.addgroup .textmsg{border-color:#ff7f7f; background: #fff2f2;}
+.addgroup .btncss{
+	background:url(../../images/button1-bg.png) no-repeat;
+	background-position:0 -25px;
+	color:white;
+}
+.addgroup .btncss:hover{background-position:-60px -25px;}
+.addgroup .btncss:active{background-position:-120px -25px;}
+
+/* 选择共享位置，如：道客巴巴 或 群组 */
+.grouping .selectshare .box{border-color: #ccc;}
+.grouping .selectshare .box p.msg{
+    border-color: #ffefe5;
+    background: #fffde5;
+    color: #f64000;
+}
+.grouping .selectshare .box p.msg .close{
+    background:url(../../images/close-small.png) no-repeat;
+    background-position:-0px -20px;
+}
+
+/* 文件夹管理 */
+.tblFolder{background: white;}
+.tblFolder th,
+.tblFolder td{
+    border-color: #eee;
+}
+
+.tblFolder th{background: #eee; border-color: #ccc;}
+
+.tblFolder .bianj{background: url(../../images/EditTool-16px.png) no-repeat;}
+.tblFolder .shanc{background: url(../../images/DelTool-16px.png) no-repeat;}
+.tblFolder .bianj:hover{background-position: 0 -16px;}
+.tblFolder .shanc:hover{background-position: 0 -16px;}
+
+
+.tblFolder .textEdit1{border-color: #ccc;}
+
+
+/*1-12五级文件夹管理*/
+.tblFolder .addchild{
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px;
+    position: relative;
+    width: 16px;
+    background: url(../../images/Add-16px.png) no-repeat;
+    vertical-align: -3px;
+}
+.tblFolder .addchild:hover{
+    background-position: 0 -16px;
+}
+
+.tbllist1 .tw70px {
+    text-align: center;
+    width: 70px;
+}
+.tblFolder tbody tr td i{
+    font-size: 12px;
+}
+.tblFolder tbody tr td.firstLevel{
+
+}
+.tblFolder tbody tr td.secondLevel{
+    padding-left: 15px;
+} 
+.tblFolder tbody tr td.thirdLevel{
+    padding-left: 30px;
+} 
+.tblFolder tbody tr td.fourthLevel{
+    padding-left: 45px;
+}
+.tblFolder tbody tr td.fiveLevel{
+    padding-left: 60px;
+}
+.tblFolder tbody tr td.sixthLevel{
+    padding-left: 75px;
+}
+
+
+.multi-file{
+    list-style: none;
+    box-sizing:border-box;
+    /*border-bottom: 1px solid #ccc;*/
+}
+.multi-file li{
+    /*padding: 3px 10px;
+    height: 28px;
+    line-height: 28px;*/
+    line-height: 28px;
+}
+.multi-file .w70{
+    display: block;
+    width: 70px;
+    float: right;
+    text-align: center;
+}
+.multi-file .textEdit1{
+    border: 1px solid #ccc;
+    height: 24px;
+    padding: 0 5px;
+    width: 100px;
+}
+.multi-space{
+    border-bottom:1px solid #eee;
+    padding: 3px 0;
+    cursor: pointer;
+}
+.multi-space i{
+    font-size: 12px;
+}
+
+.multi-file .bianj,
+.multi-file .shanc,
+.multi-file .addchild{
+    display: inline-block;
+    height: 16px;
+    margin: 5px 2px 0;
+    position: relative;
+    width: 16px;
+    /*vertical-align: -3px;*/
+    float: left;
+}
+.multi-file .bianj{background: url(../../images/EditTool-16px.png) no-repeat;}
+.multi-file .shanc{background: url(../../images/DelTool-16px.png) no-repeat;}
+.multi-file .addchild{background: url(../../images/Add-16px.png) no-repeat;}
+
+.multi-file .bianj:hover{background-position: 0 -16px;}
+.multi-file .shanc:hover{background-position: 0 -16px;}
+.multi-file .addchild:hover{background-position: 0 -16px;}
+
+.level_2{
+    padding-left: 15px;
+}
+.level_3{
+    padding-left: 30px;
+}
+.level_4{
+    padding-left: 45px;
+}
+.level_5{
+    padding-left: 60px;
+}
+.level_6{
+    padding-left: 75px;
+}
+.bge{
+    background: #eee;
+}
+
+
+
+
+
+/* 选择日期,日历控件 */
+.calendar1,
+.calendar2{border-color:#ccc; background:white url(../../images/icons/date1.png) no-repeat right center;}
+
+/* 添加与删除按钮 */
+.addbtn,
+.delbtn,
+.delbtnOff,
+.delbtnOn{
+	border:none;
+	background:url(../../images/addanddel-bg.png) no-repeat;
+	color:white;
+}
+.addbtn{background-position:0 -50px;}
+.addbtn:hover{background-position:0 -75px;}
+.addbtn:active{background-position:0 -100px;}
+
+.delbtn{background-position:-80px -50px;}
+.delbtn:hover{background-position:-80px -75px;}
+.delbtn:active{background-position:-80px -100px;}
+
+.delbtnOff{background-position: -80px 0; color: #999;}
+.delbtnOn {background-position: -80px -25px; color: white;}
+
+/* 普通小按钮 1白色、2橙色、3蓝色 */
+.buttoncss1,
+.buttoncss2,
+.buttoncss3,
+.buttoncss4{
+	border:none;
+	background:url(../../images/button1-bg.png) no-repeat;
+	color:white;
+}
+.buttoncss1{color:#666;}
+.buttoncss1:hover{background-position:-60px 0;}
+.buttoncss1:active{background-position:-120px 0;}
+.buttoncss2{background-position:0 -25px;}
+.buttoncss2:hover{background-position:-60px -25px;}
+.buttoncss2:active{background-position:-120px -25px;}
+.buttoncss3{background-position:0 -50px;}
+.buttoncss3:hover{background-position:-60px -50px;}
+.buttoncss3:active{background-position:-120px -50px;}
+.buttoncss4{background-position:0 -75px;}
+.buttoncss4:hover{background-position:-90px -75px;}
+
+/* End */
+
+.youlike .tips{border-color: #ffe4b8; background: #fffef2;}
+.youlike .topic{border-color: #ccc; color: #666;}
+.lookfor .textbig,
+.lookfor .btncss{border-color:#ccc; color:#666;}
+.lookfor .btncss:hover{border-color:#999; color:#333;}
+
+/* End */
+
+
+/* 文档模块 Documents */
+.documents{border-color:#999;}
+
+/* 文档列表内容管理，如：排序、筛选等 */
+.listmanage .manage-tools{border-color: #ccc;}
+.manage-tools .toolsbox1{background: #eee;}
+.manage-tools .toolsbox1 h6 a{color: #666;}
+.manage-tools .toolsbox1 h6 a i{color: #ccc;}
+.manage-tools .toolsbox1 h6 a:hover{color: #333;}
+.manage-tools .toolsbox1 h6 a:hover i{color: #999;}
+.manage-tools .toolsbox1 h6 a.current{color: #f66400;}
+.manage-tools .toolsbox1 h6 a.current i{color: #333;}
+.manage-tools .toolsbox2{background: white;}
+
+/* 触发更多筛选的按钮 */
+.manage-tools .siftmenu{background:url(../../images/icons/pointer-down.png) no-repeat right center; color: #666;}
+.manage-tools .siftmenu-on{background:url(../../images/icons/pointer-up.png) no-repeat right center;}
+/* 更多筛选条件容器 */
+.manage-tools .siftbox{border-color: #ccc;}
+
+/* 列表视图切换 */
+.viewTags1 li.view1{background: url(../../images/ViewTags1-view1.png) no-repeat;}
+.viewTags1 li.view2{background: url(../../images/ViewTags1-view2.png) no-repeat;}
+.viewTags1 li.view3{background: url(../../images/ViewTags1-view3.png) no-repeat;}
+.viewTags1 li:hover{background-position: 0 -24px;}
+.viewTags1 li.current{background-position: 0 -48px;}
+.viewTags1 li.disable{cursor: default;}
+
+/* 排序方式，如：按时间、按浏览 */
+.sorting1 li{border-color: #ccc; color: #666;}
+.sorting1 li:hover{border-color: #999;}
+
+/* 筛选条件的模型 */
+.mode .open-more,
+.mode .close-more{color:#f60;}
+.mode .open-more{background:url(../../images/icons/more-down.png) no-repeat right center;}
+.mode .close-more{background:url(../../images/icons/more-up.png) no-repeat right center;}
+
+/* 过滤项排列 */
+.filtrate2 li a{color:#666;}
+.filtrate2 li a:hover{color:#f60;}
+.filtrate2 li.current a{color:#f60;}
+.filtrate3{border-color:#ccc;}
+
+/* 按首字母筛选分类 */
+.nametag li b{background:url(../../images/pointer-orange.png) no-repeat;}
+.nametag li.current{background:#ff6400; color: white;}
+
+/* 列表顶部快捷翻页 */
+.toppaging li a{
+    border-color:#ccc;
+    background:white;
+    color:#666;
+}
+.toppaging li a:hover{
+    border-color:#ff9900;
+    background:#ffba00;
+    color:white;
+}
+.toppaging li a.disable{
+    border-color:#ccc;
+    background:#eee;
+    color: #999;
+}
+
+/* 私信列表 发私信 */
+.newmail{
+    border-color:#ccc;
+}
+.newmail .arrow1 {background: url(../../images/pointer.gif) no-repeat;}
+
+/* 私信列表与对话 */
+.mailtitle{border-color: #f60;}
+.maillist li{border-color: #eee;}
+.maillist li:hover,
+.maillist li.new{background: #f6f6f6;}
+.maillist li.new{border-color: #ccc;}
+
+/* 私信操作，例如：删除 */
+.mailshop{border-color: #ccc; background: white url(../../images/icons/more-down.png) no-repeat center;}
+.maillist i{color: #999;}
+.mailshop .dorpmenu{border-color: #ccc; background: white;}
+.mailshop .dorpmenu a:hover{background: #f6f6f6;}
+/* 删除对话 */
+.maildel i {color: #ccc;}
+.maildel i:hover {color: #f64000;}
+
+.maillist .userdoc p{
+    height: 40px;
+    line-height:20px;
+    overflow: hidden;
+}
+.maillist li.new .userdoc p{
+    height: 40px;
+    line-height:20px;
+    overflow: hidden;
+    color: #333;
+    font-weight: bold;
+}
+.maillist li.new .userdoc i{color: #f66400;}
+/* 私信对话框的时间 */
+.mailTime{border-color: #ccc;}
+.mailTime legend{color: #999;}
+
+.messageBox .userpto{border-color: #ccc;}
+.messageBox .arrow{background: url(../../images/MsgArrow.png) no-repeat;}
+
+.messageBox li.he .said{border-color: #ffe4b8; background: #fffef2;}
+.messageBox li.me .said{border-color: #abe1fa; background: #eff9fe;}
+.messageBox li.he .arrow{background-position: 0 0;}
+.messageBox li.me .arrow{background-position: -9px 0;}
+
+
+/* 积分与充值 */
+.scoreTop{border-color:#ccc; background: #eee;}
+.scoreTop .backShop{color: #999;}
+.score{background:white;}
+
+.score .assets .tasks{border-color:#ccc;}
+.score .assets .tasks .today{background:url(../../images/tanks-bg7.png) no-repeat;}
+.score .assets .tasks .today em{color:#f64000;}
+.score .assets .tasks .giveme{background:white;}
+.score .assets .tasks .btncss1{
+	border-color:#ff6400;
+	background:#ff6400;
+	color:white;
+}
+.score .assets .tasks .btncss2{
+	border-color:#ccc;
+	background:#f0f0f0;
+	color:#666;
+	text-shadow:none;
+}
+
+.detailtab{
+	border-color:#ccc;
+	border-bottom-color:white;
+	background:#eee;
+}
+.detailbox{border-color:#ccc;}
+.detailtab li{color:#999;}
+.detailtab li:hover{color:#666;}
+.detailtab li.current{background:url(../../images/current-white.png) no-repeat 40px bottom; color:#333;}
+.detailtab li small{color:#999;}
+
+.tableScore,
+.tableScore th,
+.tableScore td{border-color:#ccc;}
+.tableScore th.color1{border-top-color:#00a0e9;}
+.tableScore th.color2{border-top-color:#22ac38;}
+.tableScore th.color3{border-top-color:#e61673;}
+.tableScore th.color4{border-top-color:#e83828;}
+
+.tableScore th .chart{background:url(../../images/icons/chart.png) no-repeat;}
+.tableScore th .chart:hover{background-position:0 -20px;}
+
+/* 列表Table */
+.tableList,
+.tableList th,
+.tableList td{border-color:#ccc;}
+.tableList td{border-color:#ddd;}
+
+.tableList .paralleling{border-color:#ccc; background:#fcfcfc;}
+.tableList .paralleling li{border-color:#ccc;}
+
+.tableList caption{border-color:#ccc; background:#fcfcfc;}
+.tableList caption .menu{background:url(../../images/icons/menu2.png) no-repeat center center;}
+.tableList caption .menu:hover{background:url(../../images/icons/menu3.png) no-repeat center center;}
+.tableList caption .menu.current,
+.tableList caption .menu.current:hover{background:url(../../images/icons/menu4.png) no-repeat center center;}
+
+.tableList caption .search{border-color:#ccc;}
+
+.tableList thead{background: #f9f9f9;}
+
+.tableList td a{color:#333;}
+.tableList td a:hover{color:#00a1e9;}
+
+.tableList .errormsg{background:white;}
+
+
+/* 模拟 Select 设计 */
+.sltDesign1 dt{border-color:#fcfcfc; background:#fcfcfc url(../../images/icons/pointer-down.png) no-repeat 75px 10px;}
+.sltDesign1 dt.current{border-color:#ccc; background:#eee url(../../images/icons/pointer-up.png) no-repeat 75px 10px;}
+.sltDesign1 dd{
+	border-color:#ccc;
+	background:#eee;
+}
+.sltDesign1 dd p:hover{
+	background:#ff7f00;
+	color:white;
+}
+.scorelist1 li{color:#666;}
+.scorelist1 li em{color:#666;}
+
+
+
+/*------------------------------个人主页细节------------------------------*/
+/* 个人主页 馆藏 */
+.myRightMenu{background: #fff;}
+
+.myDocSource,
+.myFolder dt{border-color: #ccc;}
+
+.myDocSource li:hover,
+.myFolder li:hover{background: #efefef;}
+
+.myDocSource li.current,
+.myFolder li.current{background: #00a1e9;}
+
+.myDocSource li.current a,
+.myFolder li.current a{color: #fff;}
+.myFolder li.current .data{color: #eee;}
+.myFolder li.current .shop .edit,
+.myFolder li.current .shop .edit:hover{background-position: 0 -32px;}
+
+.myDocSource li a,
+.myFolder li a{
+    color: #666;
+    text-decoration: none;
+}
+
+.myFolder li .data{color: #999;}
+
+.myFolder li input.text,
+.myFolder li input.butn,
+.myFolder li .selt{
+    border-color: #eee;
+    background: white;
+    color: #00a1e9;
+}
+.myFolder li input.butn{background: url(../../images/gradients-bg1.png) repeat-x top; color: #666;}
+.myFolder li input.butn:hover{color: #333;}
+.myFolder li input.red,
+.myFolder li input.red:hover{color: red;}
+.myFolder li .selt{color: #666;}
+
+.myFolder li .shop .edit{background: url(../../images/EditTool-16px.png) no-repeat;}
+.myFolder li .shop .edit:hover{background-position: 0 -16px;}
+
+.myFolder .moreFolder{border-color: #eee; background: #f9f9f9;}
+.myFolder .moreFolder a{
+    background-color: #f6f6f6;
+    background-image: url(../../images/icons/pointer-down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.myFolder .moreFolder a.open{background-image: url(../../images/icons/pointer-up.png);}
+.myFolder .moreFolder a:hover{background-color: #efefef;}
+/* End */
+
+/* 个人主页 状态 */
+.itoSpeak .fast-say{border-color: #ccc;}
+
+.isaidTopic{background: #eee;}
+.isaidTopic h5{background: #f9f9f9;}
+
+.isaid .myphoto,
+.isaid .theword{border-color: #ccc;}
+.isaid .theword .word,
+.isaid .theword .itosay{border-color: #eee;}
+.isaid .theword .arrow{
+    background: url(../../images/MsgArrow.png) no-repeat;
+    background-position: -18px 0;
+}
+
+/* 个人主页 个人资料 */
+
+.myprofile dt{background: #f9f9f9;}
+.myprofile dt h5{border-color: #00a1e9;}
+.myprofile dt h5 span{color: red;}
+.myprofile dt em a{background: #f6f6f6;}
+.myprofile dt em a:hover{background: #eee;}
+
+.myprofile .addInfoBtn{
+    border-color: #ccc;
+    background-color: white;
+    background-image: url(../../images/icons/add.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    color: #999;
+}
+.myprofile .addInfoBtn:hover{color: #00a1e9;}
+.myprofile .addInfoBox{border-color: #ccc;}
+
+.myprofile .myTags li{border-color: #ccc;}
+.myprofile .myTags li .delete{background: url(../../images/close-small.png) no-repeat;}
+.myprofile .myTags li .delete:hover{background-position: 0 -20px;}
+.myprofile .myTags li .newtag{background: url(../../images/newadd-small.png) no-repeat;}
+.myprofile .myTags li:hover .newtag{background-position: 0 -20px;}
+
+.myprofile .myTagsNew li:hover{color: #00a1e9;}
+
+.myTable tr.over{background: #f9f9f9;}
+.myTable .name{color: #999;}
+.myTable .tips{color: #999;}
+
+
+.myLevelCard .radiusCss{background: url(../../images/RadiusCss160.png) no-repeat;}
+.myLevelCard .myLevelTxt{border-color: #ccc;}
+
+.myLevelPlan{border-color: #eee; background: white;}
+.myLevelPlan span.bg1{background: #00a1e9;}
+
+.myLevelTips .newtask{background: #fffef2;}
+/*新手任务*/
+.noviceTask{background-color: white;padding: 7px 0 0 20px;}
+.noviceTtitle{color: #333;font-size: 18px;line-height: 58px;}
+.noviceTtitle span{color: #ff6600;}
+.noviceTprogress{color: #666666;font-size: 12px;line-height: 12px;margin-bottom: 12px;}
+.noviceTprogress span{float: right;}
+.inforange-bar.noviceTinforange-bar{margin: 0;width: 100%;}
+.noviceTinfotable{
+    border: 1px solid #ccc;
+    margin-top: 12px;
+}
+.noviceTinfotable .sub{
+    height: 50px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+}
+.noviceTinfotable .sub span{color: #FF6600;}
+.noviceTinfotable .sub a{
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+    width: 98px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+}
+.noviceTinfotable .sub a.hactive{color: #f60; border-color: #f60;}
+.noviceTinfotable li{
+	font-size: 14px;
+    color: #666;
+}
+.noviceTinfotable li .newbie-task-sub{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #eee;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.noviceTinfotable li .newbie-task-con{
+    border-bottom: 1px solid #eee;
+    margin: 0 20px;
+    display: none;
+}
+.noviceTinfotable li a.newbie-status{
+	float: right;
+	width: 98px;
+	height: 28px;
+  line-height: 28px;
+	font-size: 14px;
+  color: #666;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.noviceTinfotable li a:hover{
+  color: #f60;
+  border-color: #f60;
+}
+/*不能领取*/
+.noviceTinfotable .sub a.cannot_receive{
+	background: #fff;  color: #d8d8d8;border: 1px solid #eee;
+}
+.noviceTinfotable .sub a.cannot_receive:hover{
+	color: #f60;
+  border-color: #f60;
+}
+/*能领取*/
+.noviceTinfotable .sub a.can_receive{
+	border: 1px solid #eee;color: #666;
+}
+.noviceTinfotable .sub a.can_receive:hover{
+	color: #f60;
+  border-color: #f60;
+}
+/*已经领取*/
+.noviceTinfotable .sub a.already_receive{
+	background: #fff;  color: #d8d8d8;border: 1px solid #eee;
+}
+.noviceTinfotable .sub a.already_receive:hover{
+	background: #fff;  color: #d8d8d8;border: 1px solid #eee;
+}
+.sub .mtoast{
+	position: absolute;
+	line-height: 12px;font-size: 12px;
+	padding: 5px 10px;
+  border: solid 1px #facd89;
+  background: #fffccc;
+  color: #5c5929;
+	width: auto;top: 13px;
+	right: 125px;
+	display: none;
+}
+.noviceTinfotable li .newbie-icon-sure{margin-right: 15px; color: #ccc;}
+.noviceTinfotable .noviceCompleted .newbie-icon-sure{color: #FF6600;}
+.noviceTinfotable .noviceCompleted a.newbie-status{border: none;color: #FF6600;}
+.noviceTinfotable .noviceCompleted a.newbie-status:hover{text-decoration: none;}
+.novice-jifen{position: relative;}
+.novice-jifen img{position: absolute;top: 30px;left: 30px;width: 50%;}
+/*.noviceTinfotable li:hover{color: #FF6600;}*/
+/*.noviceTinfotable .sub:hover{color: #333333;}*/
+/*.noviceTinfotable li:hover a{color: #FF6600;border-color: #FF6600;text-decoration: none;}*/
+
+#page_1,
+#page_2,
+#page_3,
+#page_4,
+#page_5{
+    border-bottom: 1px solid #eee;
+    margin: -1px 20px 0;
+}
+
+
+
+/*q 2018-02-05个人中心 新手任务提示框*/
+.new-user-box{
+    position: relative;
+    z-index: 10;
+}
+.new-user-bg{
+    background: #333;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.new-user-content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.new-user-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+}
+.new-user-content .tips-close{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -135px;
+    margin-right: -280px;
+    cursor: pointer;
+    border: 10px solid transparent;
+}
+.new-user-content .tips-btn{
+  display: block;
+  width: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 78px;
+  margin-left: -80px;
+  background-color: #fc5400;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 25px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.new-user-content .tips-btn:hover{
+	text-decoration: none;
+	background-color: #ff5d0c;
+}

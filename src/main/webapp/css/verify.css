@@ -1,0 +1,625 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.mainpart{
+	width:1000px;
+	margin:0 auto;
+}
+/* 给 Header 单独添加5像素下阴影 */
+.header{
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    behavior: url(../iecss3/PIE.htc);
+}
+
+/* 认证首页Banner */
+.userbanner1{
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    background: url(../images/verify/Verify-Banner1.png) no-repeat center;
+}
+.orgbanner1{
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    background: url(../images/verify/Verify-Banner2.png) no-repeat center;
+}
+
+.verifybun1,
+.verifybun2{
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: #ffb128;
+    box-shadow: 0 3px 1px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 24px;
+    behavior: url(../../assets/iecss3/PIE.htc);
+    cursor: pointer;
+}
+.verifybun2{background: #b32c43;}
+
+
+
+/* 认证流程 */
+.verify-process1{
+    border-top: solid 1px white;
+    border-bottom: solid 1px #eee;
+    background: #f8f8f8;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.5);
+    behavior: url(../../assets/iecss3/PIE.htc);
+}
+.process{
+    padding: 20px 0;
+    overflow: hidden;
+}
+.process dt,
+.process dd{
+    float: left;
+    width: 25%;
+    font-style: italic;
+    color: #666;
+}
+.process dt{
+    padding: 10px 0 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.process h4{font-size: 18px;}
+.process h4 big{font-size: 20px;}
+
+.verify-box1{background: white;}
+.verify-box2{background: #f8f8f8;}
+
+.verify-box1 .topic,
+.verify-box2 .topic{
+    overflow: hidden;
+    padding: 20px 0;
+    line-height: 20px;
+}
+.verify-box1 .topic span,
+.verify-box2 .topic span{float: right;}
+
+.verify-box1 h3,
+.verify-box2 h3{
+    float: left;
+    font-size: 20px;
+}
+
+.verify-box1 .cont,
+.verify-box2 .cont{
+    padding: 0 0 20px;
+}
+
+.verify-guild{padding: 20px 0;}
+.verify-guild table{width: 100%;}
+.verify-guild table td{
+    width: 25%;
+    padding: 5px 0 20px;
+    text-align: center;
+}
+
+.vipStory{
+    position: relative;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    margin: 50px 10px 0;
+    padding: 50px 0 0;
+    behavior: url(../../assets/iecss3/PIE.htc);
+}
+.vipStory legend{
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    border: solid 1px #eee;
+    border-radius: 40px;
+    background: white;
+    line-height: 80px;
+    text-align: center;
+    behavior: url(../../assets/iecss3/PIE.htc);
+}
+.vipStory legend .iconfont{font-size: 48px;}
+
+.vipStory h5{padding: 10px 10px 20px; font-size: 20px;}
+.vipStory p {
+    background: #f8f8f8;
+    padding: 20px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Vip 用户卡 */
+.vipshow1{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 5px;
+}
+.vipshow1 dt{float: left;}
+.vipshow1 dt,
+.vipshow1 dt img{
+    width: 80px;
+    height: 80px;
+}
+.vipshow1 dt img{border-radius: 10px;}
+.vipshow1 dt img.org{
+    width: 78px;
+    height: 78px;
+    border: solid 1px #eee;
+    border-radius: 0;
+}
+.vipshow1 dd{
+    margin-left: 90px!important;
+    margin-left: 87px;
+}
+
+.vipshow1 dd h5{font-size: 16px; font-weight: bold;}
+.vipshow1 dd h6{font-size: 14px;}
+.vipshow1 dd p {
+    height: 36px;
+    line-height: 18px;
+    color: #666;
+    overflow: hidden;
+}
+.vipshow1 dd p.org{height: 54px;}
+.vipshow1 dd p a{color: #666;}
+.vipshow1 dd p img.typeicon{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin:5px 5px 0 0;
+}
+.vipshow1 dd.doclist{
+    margin-left: 0!important;
+    padding: 10px 0 0;
+}
+.vipshow1 dd.doclist p{
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+/* Vip 用户列表 */
+.verify-vips,
+.verify-orgs{overflow: hidden;}
+.verify-vips li{
+    float: left;
+    width: 33.333%;
+}
+.verify-orgs li{
+    float: left;
+    width: 25%;
+}
+/* 个人认证--表单 */
+
+
+
+.userbanner2{
+    position: relative;
+    z-index: 1;
+    height: 180px;
+    background: #30acfc;
+}
+.userlogo{
+    height: 80px;
+    overflow: hidden;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.userlogo img{height: 80px;}
+.summary{
+    height: 99px;
+    border-top: solid 1px #93d4fe;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #59bdfd;
+    box-shadow: 0 -1px 1px #2b9be2;
+    behavior: url(../iecss3/PIE.htc);
+}
+.summary h2{
+    padding: 30px 0 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100%;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    behavior: url(../iecss3/PIE.htc);
+}
+.summary h2 .iconfont{
+    margin: 0 15px;
+    font-size: 48px;
+    color: #f60;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    behavior: url(../iecss3/PIE.htc);
+}
+
+
+
+.userguild{
+    border-bottom: dashed 1px #ccc;
+    background: #fff;
+    padding: 15px 0;
+    color: #024;
+    font-size: 20px;
+    line-height: 100%;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    behavior: url(../iecss3/PIE.htc);
+}
+.userguild table{width: 100%;}
+.userguild table td{width: 25%; text-align: center;}
+.userguild .iconfont{color: #024; font-size: 24px;}
+
+
+
+.formwrap{
+    border-bottom: solid 1px #ccc;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.verify-table{
+    width: 100%;
+    margin: 0 0 10px;
+}
+.verify-table th,
+.verify-table td{
+    line-height: 100%;
+    font-size: 14px;
+    color: #666;
+}
+.verify-table td{padding: 10px 5px;}
+.verify-table td.theparent{position: relative;}
+.verify-table th h5,
+.verify-table th em{
+    float: left;
+    border-left: solid 5px #00a0e9;
+    margin: 15px 0;
+    padding: 0 15px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: left;
+}
+.verify-table em,
+.verify-table th em{
+    border: none;
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+}
+.verify-name{
+    vertical-align: top;
+    width: 140px;
+    text-align: right;
+    line-height: 30px!important;
+}
+.sample{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 20px;
+    border-left: solid 1px #eee;
+    padding-left: 30px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+.sample a:hover{text-decoration: none; color: #30acfc;}
+.sample .sample-img{width: 128px;}
+.sample .sample-img:hover{opacity: .7;}
+
+
+.verify-upload{overflow: hidden;}
+.verify-upload .ulist1 li{padding: 5px 0;}
+.verify-upload .upload01{
+    float: left;
+    width: 200px;
+}
+.verify-upload .upload02{
+    margin-left: 220px;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+.verify-upload .upload02 .msg{font-size: 14px; line-height: 25px;}
+
+.photo-templet{
+    width: 128px;
+    margin-bottom: 10px;
+}
+
+.verify-table .change{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.verify-table .change:hover{text-decoration: none; color: #00a0e9;}
+
+
+/* 从 asclass.css 中复制过来的 修改了专用的 编辑头像样式 */
+.asMyPhoto{position: relative; padding: 10px 0 0;}
+
+.asMyPhoto .layout{padding: 10px 0; overflow: hidden;}
+.asMyPhoto .layout .editBox{
+    float: left;
+    width: 300px;
+}
+.asMyPhoto .layout .shwoBox{
+    margin-left: 330px!important;
+    margin-left: 327px;
+    height: 300px;
+    padding: 5px 0 5px 20px;
+    border-left: solid 1px #eee;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+}
+.asMyPhoto .layout .shwoBox h6{padding-bottom: 20px; font-size: 14px;}
+.asMyPhoto .upload{
+    border: solid 1px #ccc;
+    background: white;
+    padding: 1px;
+    height: 300px;
+    background:url(../images/AsMyPhoto-bg.png) no-repeat center;
+}
+.asMyPhoto .submitbox{padding: 20px 0;}
+
+.asMyPhoto .photos{position: relative;}
+.asMyPhoto .photos .imgwrap,
+.asMyPhoto .photos .imgwrap img{
+    width: 160px;
+    height: 160px;
+}
+
+.asMyPhoto .photos .imgwrap{
+    float: left;
+    border: solid 1px #ccc;
+    background: white;
+    margin-bottom: 5px;
+    padding: 1px;
+    overflow: hidden;
+}
+.asMyPhoto .photos dt .imgwrap,
+.asMyPhoto .photos dt img{width: 160px; height: 160px;}
+/* End */
+
+/* 从 main.css 中复制过来的 修改了专用的 单列单选 */
+/* 模拟SELECT */
+
+.analog-select{
+    padding: 0 5px 0 5px;
+    border:solid 1px #ccc;
+    border-radius:2px;
+    font-size:14px;
+}
+.analog-select em{
+    margin: 0 0 0 20px;
+    padding: 0;
+    float: right;
+}
+.options-wrap{top: 31px;}
+
+.options-wrap .options ul li{
+    height: 30px;
+    min-height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 14px;
+}
+/* End */
+/* 表单成功返回信息 */
+.verify-message{
+    padding: 80px 0;
+    text-align: center;
+    line-height: 200%;
+}
+.verify-message h6{
+    padding: 20px 0;
+    font-size: 20px;
+}
+.verify-message h6 .iconfont{
+    float: left;
+    font-size: 28px;
+    padding-left: 40px;
+}
+.verify-message p{
+    padding: 20px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* 表单 */
+.verify-text{height: 30px; line-height: 30px;}
+.verify-submit{
+    padding: 50px 0 50px;
+    text-align: center;
+}
+.verify-btn1,
+.verify-btn2{
+    width: 126px;
+    height: 33px;
+    border:solid 1px #ddd;
+    border-radius: 3px;
+    background:url(../images/gradients-bg1.png) repeat-x top;
+    font:14px/100% "微软雅黑","黑体","宋体";
+    color:#666;
+    cursor:pointer;
+    text-align:center;
+}
+.verify-btn1:hover,
+.verify-btn2:hover{
+    background: #fff;
+    color: #333;
+}
+
+a.verify-btn1,
+a.verify-btn2{
+    display: inline-block;
+    line-height: 33px;
+}
+.verify-agreement1,
+.verify-agreement2{
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    padding: 5px;
+    line-height: 25px;
+    overflow: auto;
+}
+
+/*2016-11-9*/
+.d-org{
+    margin: 20px auto;
+}
+
+.org-box{
+    width: 725px;
+}
+.org-con{
+    
+}
+.org-con li{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.org-intro{
+    overflow: hidden;
+}
+.org-intro .org-pic{
+    width: 78px;
+    height: 78px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    float: left;
+}
+.org-intro .org-detail{
+    font-size: 14px;
+}
+.org-intro .org-detail h3 a{
+    font-size: 18px;
+    color: #333;
+}
+.org-intro .org-detail h3 i{
+    color: #00a1e9;
+}
+.org-intro .org-detail h3 .org-atten{
+    padding: 2px 6px;
+    background-color: #efefef;
+    border-radius: 4px;
+    color: #999;
+    cursor: pointer;
+}
+.org-intro .org-detail p a{
+    color: #666;
+}
+.org-doc{
+    font-size: 14px;
+    margin: 15px 0;
+    font-size: 0;
+}
+.org-doc a{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    width: 48%;
+    *width: 47%;
+    padding-right: 2%;
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.org-doc img{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin:5px 5px 0 0;
+}
+.org-side{
+    width: 250px;
+    float: right;
+}
+.org-side-con{
+    margin-bottom: 20px;
+}
+.org-join{
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+}
+.org-side-list{
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.org-side-list h3{
+    height: 39px;
+    line-height: 39px;
+    background-color: #F3F3F3;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.org-side-list .org-list-con{
+    padding: 10px 0;
+}
+.org-side-list .org-list-con a{
+    display: block;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+}
+.org-side-list .org-list-con a img{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 7px 5px 0 0;
+}
+.paging01.paging01-right{
+    text-align: right;
+}
+.paging01.paging01-right ul{
+    display: inline-block;
+}
+
+/*vertify-wx*/
+.vertify-wx{
+    overflow: hidden;
+    width: 540px;
+    margin: 40px auto 50px;
+}
+.vertify-wx img{
+    width: 110px;
+    height: 110px;
+    float: left;
+    margin-right: 30px;
+}
+.vertify-wx-tips{
+    font-size: 18px;
+    color: #f60;
+    text-align: left;
+}
+.vertify-wx-tips p{
+    margin: 10px 0 20px 0;
+}

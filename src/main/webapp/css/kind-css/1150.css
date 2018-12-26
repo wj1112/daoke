@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/*网站头部 和 阅读页*/
+
+.btnupload2 {
+	display: none !important;
+}
+
+.btnupload1 {
+	display: none !important;
+}
+
+.btnupload3 {
+	display: block !important;
+}
+
+.mainpart {
+	margin: auto;
+	width: 1150px;
+}
+
+.bigsearch .stext {
+	width: 140px;
+	padding: 0 5px;
+	background-position: left 0;
+}
+
+.commonbox1 .box {
+	padding: 10px 0px;
+	height: 164px;
+	width: 840px;
+}
+
+.doctopic h1 {
+	width: 720px;
+}
+
+
+/*找文档列表页*/
+
+.completionLeft-detail {
+	width: 880px;
+}
+
+.header_search .text {
+	width: 779px;
+}
+
+
+/*找文档详情页*/
+
+.detail_nav_top {
+	width: 1150px;
+}
+
+.detail {
+	width: 1150px;
+}
+
+.each_task_con {
+	width: 860px;
+}
+
+.completionLeft {
+	width: 880px;
+}
+
+
+/*道客圈*/
+
+.cricle-container {
+	width: 1150px;
+}
+
+.circle-l {
+	width: 890px;
+}
+
+.smiliesbox img {
+	margin: 10px 13px;
+}
+
+.oth-comment-container .smiliesbox img {
+	margin: 10px 10px;
+}
+
+.topic-det-author-right {
+	width: 788px;
+}
+
+.topic-det-dis-con .smiliesbox img {
+	margin: 10px 13px;
+}
+
+.topic-det-dis-con .oth-comment-bottom .smiliesbox img {
+	margin: 10px 10px !important;
+}
+
+.status-item .topic-det-dis-con .smiliesbox img {
+	margin: 10px 12px;
+}
+
+.status-item .topic-det-dis-con .oth-comment-bottom .smiliesbox img {
+	margin: 10px 9px;
+}
+
+.oth-comment-container .two-level .oth-comment2-itemLi .smiliesbox img {
+	margin: 10px 8px;
+}
+
+.home-content {
+	width: 1150px;
+}
+
+.book-det {
+	max-width: 645px;
+}
+
+.homepage-con .perRmain-circle .book-det {
+	max-width: 635px !important;
+}
+
+.book-det-txt.his-img .txt-wrap {
+	width: 485px;
+}
+
+
+/*文辑的列表页*/
+
+.wrapper {
+	width: 1150px;
+}
+
+.corpus .con {
+	width: 900px;
+}
+
+
+/*文辑详情页*/
+
+.corpus-detail {
+	width: 1150px;
+}
+
+.detail-con {
+	width: 870px;
+}
+
+
+/*任务其他-详情页*/
+
+.process {
+	margin: 15px 0 0 120px;
+}

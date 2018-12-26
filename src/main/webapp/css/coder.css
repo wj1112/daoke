@@ -1,0 +1,620 @@
+@charset "utf-8";
+/* CSS Document */
+.usershop .user2 .gravatar,
+.usershop .user2 .gravatar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+
+
+/* 用户中心关于用户的提示信息 */
+.usershop li.usertips a.mycenter {
+    display: block;
+    float: left;
+    height: 50px;
+    padding: 0 30px 0 10px;
+    background: url(../images/icons/pointer-down.png) no-repeat 55px center;
+}
+
+.usershop li.usertips a.mycenter:hover, .usershop li.usertips a.current {
+    background: #111 url(../images/icons/pointer-down.png) no-repeat 55px center;
+}
+
+/* 用户中心主要样式 UserCentre MainCss */
+.mainbody {
+    min-height: 530px;
+}
+
+.manage-tools .toolsbox2 {
+    position: relative;
+    padding: 5px 10px;
+    line-height: 25px;
+    min-height: 25px;
+}
+
+body {
+    overflow: scroll;
+}
+
+.menupanel {
+    float: left;
+    width: 160px;
+    padding: 10px 0;
+}
+
+.bookshow3 .bookimg {
+    position: relative;
+    float: left;
+    width: 116px;
+    height: 156px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bookshow3 .bookimg a {
+    width: 116px;
+    height: 156px;
+    display: block
+}
+
+.bookimg a {
+    width: 116px;
+    height: 156px;
+    display: block
+}
+
+.clearfix {
+}
+
+.selectgroup {
+    position: relative;
+    width: 286px;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.messageBox li .said p {
+    width: 330px;
+    word-break: break-all;
+}
+
+/* 文档陈列 */
+.imgtxt11 {
+    overflow: hidden;
+    position: relative;
+}
+
+.imgtxt11 li {
+    _width: 156px;
+    float: left;
+    height: 320px;
+    margin: 10px 25px 10px 0;
+    position: relative;
+    width: 160px;
+}
+
+.imgtxt11 li .books {
+    position: relative;
+    width: 160px;
+    _width: 156px;
+    height: 234px;
+    border: solid 1px #ccc;
+    background: white;
+    padding: 1px;
+}
+
+.imgtxt11 li .books img {
+    width: 160px;
+}
+
+.imgtxt11 li .books a {
+    width: 160px;
+    _width: 156px;
+    height: 234px;
+    display: block
+}
+
+.imgtxt11 li .names {
+    padding: 10px 0 0;
+    line-height: 20px;
+}
+
+.imgtxt11 li .names h2 {
+    max-height: 34px;
+    padding: 0 0 5px;
+    font-size: 16px;
+    line-height: 20px;
+    _height: 36px;
+    overflow: hidden;
+}
+
+.imgtxt11 li .names h4 {
+    height: 20px;
+    padding: 10px 0 0;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.imgtxt11 li .names h2 a {
+    color: #666;
+    display: block;
+    margin-left: 26px;
+}
+
+.imgtxt11 li .names h4 a {
+    color: #33bbd9;
+}
+
+.imgtxt11 li .names p {
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+}
+
+.imgtxt11 li .books:hover {
+    border-color: #f39800;
+}
+
+.imgtxt11 li .books em {
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-top-left-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.imgtxt11 .books .mylike {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -1px;
+    width: 32px;
+    height: 32px;
+}
+
+.imgtxt11 .typeIcon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+
+/* 通用加载大按钮 */
+.loadings {
+    margin: 15px 0;
+    padding: 10px;
+    border: solid 1px #ddd;
+    background: #eee;
+    text-align: center;
+    color: #999;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.loadings:hover {
+    border-color: #ccc;
+    color: #333;
+}
+
+.bookshow3 .bookdoc p.outline {
+    height: 80px;
+    max-height: 80px;
+    overflow: hidden;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.basicinfo dd p {
+    height: 25px;
+    max-height: 25px;
+    overflow: hidden;
+}
+
+.myFolder ul {
+    height: auto;
+    overflow: hidden;
+}
+
+.bookshow3 .share {
+    padding-top: 2px;
+}
+
+.bookshow3 .share img {
+    width: 16px;
+    height: 16px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    background: #4c4c4c url(/assets/images/footer-bg.png) repeat-x;
+    color: white;
+}
+
+.footer .service-qq {
+    display: block;
+    width: 96px;
+    height: 25px;
+    background: url(/assets/images/service-qq-bg.png) no-repeat;
+    cursor: pointer;
+    /* 列表中文档编辑的特殊控制 */
+}
+
+.bookshow3 .editlayout {
+    border: none;
+    padding: 5px;
+}
+
+/* 列表中文档编辑的特殊控制 */
+.bookshow4 .editlayout {
+    margin: 0 0px;
+}
+
+/* 返回顶部以及页面其他浮动操作 */
+.toplayer-shop{
+    position:fixed;
+    right:10px;
+    bottom:85px;
+    width:50px;
+}
+.gotop{
+    position:relative;
+    width:48px;
+    height:48px;
+    background: #eee;
+    cursor:pointer;
+    text-align: center;
+    transition:background 1s;
+    -moz-transition:background 1s;  /* Firefox 4 */
+    -webkit-transition:background 1s;   /* Safari 和 Chrome */
+    -o-transition:background 1s;    /* Opera */
+    font-size: 16px;
+    line-height: 18px;
+}
+.gotop a{color: #999;text-decoration: none;}
+.gotop .imglogo{display:block;}
+.gotop .txtlogo{display:none;}
+.gotop a .iconfont{font-size: 24px; line-height: 48px;}
+.gotop:hover{background:#A3A3A3;}
+.gotop:hover a{color: #fff;}
+.gotop:hover a.imglogo{display:none;}
+.gotop:hover a.txtlogo{display:block;padding-top: 6px;}
+/* End */
+
+.basicinfo dt span {
+    padding: 5px 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.basicinfo dt #select_button{
+	font-size:18px;
+}
+
+.bookshow4 {
+    z-index: 0;
+}
+
+/* 文档分类 */
+.bookslist {
+    position: relative;
+    float: left;
+    height: 30px;
+    background: url(/assets/images/icons/books.png) no-repeat left center;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 25px;
+    font: 14px / 30px "微软雅黑";
+}
+
+.bookslist a {
+    display: inline-block;
+    height: 30px;
+    background: url(/assets/images/icons/pointer-down.png) no-repeat right center;
+    padding-right: 25px;
+    line-height: 30px;
+    color: #ccc;
+}
+
+.downmenu2 {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 35px;
+    left: -130px;
+    width: 400px;
+    background: url(/assets/images/downmenu2-bg.png) no-repeat top center;
+    padding: 10px 0 0;
+}
+
+.downmenu2 ul {
+    border: solid 3px #eee;
+    background: #efefef;
+    box-shadow: 0 1px 3px #aaa;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+.downmenu2 ul li {
+    float: left;
+}
+
+.downmenu2 ul li a {
+    display: block;
+    width: 93.5px;
+    height: 20px;
+    background: none;
+    margin: 5px 0;
+    padding: 0;
+    line-height: 20px;
+    color: #666;
+}
+
+.downmenu2 ul li a:hover {
+    color: #333;
+}
+
+.header .usershop li.upload {
+    padding: 10px 10px 0;
+}
+
+.smiliesbox .arrow {
+    position: absolute;
+    bottom: -5px;
+    left: 6px;
+    width: 9px;
+    height: 5px;
+    background: url(/assets/images/icons/smilies-arrow.png) no-repeat;
+}
+
+.imgbox a {
+    width: 66px;
+    height: 86px;
+    display: block
+}
+
+.bookshow1 .imgbox em {
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-top-left-radius: 5px;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.bookimgsmall {
+    width: 66px;
+    height: 86px;
+}
+
+.bookimgsmall a {
+    width: 66px;
+    height: 86px;
+    display: block
+}
+
+.bookshow2 #small a {
+    width: 66px;
+    height: 86px;
+    display: block
+}
+
+.bookshow2 .bookimg em {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: white;
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-top-left-radius: 5px;
+    padding: 3px 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 11px;
+}
+
+.imgbox em {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: white;
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-top-left-radius: 5px;
+    padding: 3px 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 11px;
+}
+
+.toppaging li.disable {
+    color: #ccc;
+    cursor: default;
+}
+
+.datacard1 a {
+    color: #000000;
+}
+
+.doc_plus {
+    display: block;
+    padding-bottom: 6px;
+    float: left;
+    height: 30px;
+}
+
+.fast-say {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+    color: #999;
+    text-align: left;
+}
+
+/*提示信息*/
+.msgs {
+    font-size: 12px;
+    color: red;
+}
+
+.success_msgs {
+    font-size: 12px;
+    color: green;
+}
+
+.textmsg {
+    border-color: #ff7f7f;
+    background: #fff2f2;
+}
+
+.analog-check input, .analog-radio input {
+    margin: 0;
+    padding: 0;
+}
+
+.minbox2 .usershow1 .userdoc a {
+    width: 114px;
+    overflow: hidden;
+}
+
+.comment1 #appendlist a, .comment1 #close a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment1 #appendlist a:link, .comment1 #close a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment1 #appendlist a:visited, .comment1 #close a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment1 #appendlist a:hover, .comment1 #close a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment1 #appendlist a:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.warning {
+    border-color: #ff7f7f;
+    background: #fff2f2;
+    width: 100%
+}
+
+p {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.newmail .say-box {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    border-color: #ccc;
+}
+
+.newmail .itoSpeak {
+    border-style: solid;
+    border-width: 0px !important;
+}
+
+.newmail .say-shop {
+    background: none repeat scroll 0 0 #ffffff !important;
+}
+
+.friends .itoSpeak {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+
+.paging01 ul li a {
+    display: block
+}
+@charset "utf-8";
+/* CSS Document */
+.asMyPhoto .layout .shwoBox {
+    margin-left: 450px !important;
+}
+
+.asMyPhoto .upload {
+    border: 0px;
+}
+
+.verify-btn1 {
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 126px;
+    height: 33px;
+}
+
+#upload_sfz, #upload_zj, #upload_yyzz, #upload_xy {
+    display: block;
+}
+
+#success_sfz, #success_zj, #success_yyzz, #success_xy {
+    display: none;
+}
+
+.qrcodelogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    display: block;
+}
+
+.qrcodelogo img {
+    width: 60px;
+}
+
+.verify-submit {
+    padding: 0 0 50px 0;
+}
+
+.photo-templet {
+    height: 88px;
+}
+
+.analog-users b.new_attitude{
+	background: url(../images/1.png);
+}
+
+.usershow3 .userdoc i {
+	cursor: default;
+}
+
+
+/*tenth activity*/
+.tens-activity img{
+    width: 144px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
