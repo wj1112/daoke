@@ -1,0 +1,714 @@
+/*弹框公共部分*/
+body, input, select, option, textarea, button {
+    font-family: "Microsoft Yahei","微软雅黑",Arial,sans-self;
+}
+*{margin: 0;}
+.orange{color:#ff4d00;}
+/*vip*/
+.pop-doc-vip,.pop-doc-discount {
+  border: 1px solid #f60;
+  color: #f60;
+  font-size: 14px;
+  padding: 0 6px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+/*折扣按钮*/
+.pop-doc-discount{
+  cursor: default;
+}
+.original-cost{text-decoration: line-through;}
+/*微信扫码*/
+/*.shortp-wx-code{
+	float: left;
+	width: 140px;
+	border-right: 1px dashed #eee;
+	margin: 20px 0 20px 10px;
+}*/
+.shortp-wx-code{
+	float: left;
+	width: auto;
+	max-width: 177px;
+	padding-right: 20px;
+	border-right: 1px dashed #eee;
+	margin: 20px 0 20px 10px;
+}
+.shortp-wx-code p{
+	line-height: 14px;
+	font-size: 14px;
+	color: #333;
+	margin: 0;
+	min-width: 120px;
+}
+.shortp-wx-code .iconfont{
+	color: #13ae2f;
+	margin-right: 6px;
+	font-size: 16px;
+}
+.shortp-wx-code .doc_qrcode{
+	width: 120px;
+  height: 120px;
+  margin: 25px auto 0;
+}
+.shortp-wx-code img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.down-popup-txt .padding-b15,.task-pay-txt .padding-b15,.shortp-txt .padding-b15{
+	padding-bottom: 15px;
+}
+.down-popup .margin-t25{
+	margin-top: 25px;
+}
+.down-popup .margin-t20 h5{
+	padding-top: 15px;
+}
+/*按钮*/
+.down-popup-btn a,.shortp-popup-btn a,.task-pay-popup-btn a,.circle-popup-btn a{
+	display: inline-block;
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-right: 15px;
+}
+.circle-popup-btn a.btn-share-circle,.circle-popup-btn a.btn-cancel{
+	width: 70px;
+	height: 28px;
+	line-height: 28px;
+}
+/*绿色按钮*/
+.btn-wx-scanning{
+	background-color: #13ae2f;
+	color: #fff;
+	margin-right: 15px;
+}
+/*橘色按钮*/
+.btn-pay-confirm{
+	background-color: #ff6600;
+	color: #fff;
+	margin-right: 15px;
+}
+/*蓝色按钮*/
+a.btn-otherway,a.btn-send-task,a.btn-share-circle{
+	background-color: #00a1e9;
+	color: #fff;
+	margin-right: 15px;
+}
+.circle-popup-btn a.btn-share-circle{
+	margin-right: 0;
+}
+/*灰色按钮*/
+a.btn-cllect,a.btn-cancel{
+	width: 128px;
+	color: #666;
+	border: 1px solid #eee;
+	background-color: #f8f8f8;
+}
+/*移入状态*/
+/*绿色*/
+a.btn-wx-scanning:hover{
+	background-color: #22b63c;
+}
+/*橙色按钮*/
+a.btn-pay-confirm:hover,a.btn-discount:hover{
+	background-color: #ff7711;
+}
+/*蓝色按钮*/
+a.btn-otherway:hover,a.btn-down:hover,a.btn-send-task:hover{
+	background-color: #2FAFF0;
+}
+/*灰色阿牛*/
+a.btn-cllect:hover,a.btn-cancel:hover{
+	background-color: #fbfbfb;
+}
+/*橙色渐变（上下）按钮*/
+a.btn-grad{
+	background-color: #FBA040;
+  background: #FBA040;
+  background: -moz-linear-gradient(top, #FBA040 0%, #fb8733 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBA040), color-stop(100%,#fb8733));
+  background: -webkit-linear-gradient(top, #FBA040 0%,#fb8733 100%);
+  background: -o-linear-gradient(top, #FBA040 0%,#fb8733 100%);
+  background: -ms-linear-gradient(top, #FBA040 0%,#fb8733 100%);
+  background: linear-gradient(to bottom, #FBA040 0%,#fb8733 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBA040', endColorstr='#fb8733',GradientType=0 );
+}
+.down-popup-txt h5,.task-pay-popup-txt h5,.task-pay-txt h5{
+	color: #333;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 20px 0 6px;
+	font-weight: normal;
+}
+.down-popup-txt h5{padding-top: 17px;}
+.down-popup,.task-pay-popup{
+	overflow: hidden;
+}
+.down-popup a,.task-pay-popup a{
+	text-decoration: none;
+}
+.down-img-left,.task-pay-left{
+	float: left;
+	width: 103px;
+	border-right: 1px dashed #efefef;
+	margin: 20px 0 0 11px;
+	height: 124px;
+	padding-top: 40px;
+}
+.down-popup-txt,.task-pay-popup-txt{
+	float: left;
+	width: 445px;
+	padding-left: 20px;
+}
+.down-popup-txt p,.task-pay-txt p{
+	font-size: 14px;
+	line-height: 25px;
+	margin: 0;
+	color: #333;
+}
+/*下载*/
+/*2018-1-9*/
+.down-img-left img{
+	width: 83px;
+}
+.bj-shortp .down-img-left{
+	height: 120px;
+	padding-top: 30px;
+}
+.bj-shortp .down-popup-txt h5{
+	padding-top: 23px;
+}
+.down-vip-h5 .down-vip-original{text-decoration: line-through;}
+.btn-down{
+	background-color: #00a1e9;
+	color: #fff;
+	font-size: 14px;
+}
+.down-popup-txt p.prompt-text{
+	color: #999;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 11px 0;
+}
+.prompt-text a{
+	color: #00a1e9;
+}
+.down-popup-btn{
+	padding-top: 5px;
+}
+.bj-shortp .down-popup-btn{
+	padding-top: 15px;
+}
+/*.shortp-txt{
+	width: 409px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}*/
+.shortp-txt{
+	width: auto;
+	max-width: 390px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.shortp-txt h5{
+	padding-bottom: 20px;
+	padding-top: 0;
+	font-weight: normal;
+	line-height: 14px;
+}
+.shortp-txt p{
+	line-height: 24px;
+	font-size: 14px;
+	margin: 0;
+	color: #333;
+}
+.doc-title{
+	color: #00a1e9;
+  overflow: hidden;
+  display: inline-block;
+  height: 20px;
+  max-width: 360px;
+  line-height: 20px;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.shortp-txt .doc-title{
+	max-width: 300px;
+}
+.shortp-popup-btn{padding-top: 20px;}
+
+.bj-shortp .btn-send-task{
+	width: 160px;
+}
+
+/*任务*/
+.task-pay-left{
+	width: 104px;
+	margin: 20px 0 0 18px;
+	height: 125px;
+	padding-top: 35px;
+}
+.task-pay-txt{
+	float: left;
+	width: 436px;
+	padding-left: 20px;
+}
+.task-pay-popup-btn{
+	padding-top: 23px;
+}
+.task-pay-txt h5 p{
+	line-height: 14px;
+	padding-bottom: 9px;
+}
+.shortp-task-popup h5{
+	padding-bottom: 0;
+}
+.shortp-task-popup .task-pay-txt h5{
+	padding-top: 15px;
+}
+.shortp-task-popup .task-pay-popup-btn{
+	padding-top: 17px;
+}
+.shortp-task-popup .task-pay-left{
+  width: 99px;
+	margin: 15px 0 0 15px;
+	height: 123px;
+	padding-top: 47px;
+}
+/*查重*/
+.checkheavy-popup .task-pay-left{
+	width: 99px;
+	margin: 48px 0 0 15px;
+	padding-top: 9px;
+  height: 94px;
+}
+.checkheavy-popup .task-pay-txt h5{
+	padding: 46px 0 13px 0;
+}
+.shortp-checkheavy-popup .task-pay-left{
+	width: 99px;
+	margin: 32px 0 0 15px;
+	height: 106px;
+	padding-top: 30px;
+}
+.shortp-checkheavy-popup .task-pay-txt h5{
+	padding: 32px 0 4px 0;
+}
+.shortp-checkheavy-popup .task-pay-txt h5 p{
+	padding-bottom: 13px;
+	color: #333;
+}
+.shortp-checkheavy-popup .shortp-txt h5{
+	padding-bottom: 5px;
+}
+.shortp-checkheavy-popup .shortp-txt h5 p{
+	font-size: 14px;
+	color: #333;
+	line-height: 14px;
+	padding-bottom: 10px;
+}
+/*折扣*/
+.discount-left{
+	float: left;
+	width: 99px;
+  margin: 15px 0 0 15px;
+  height: 104px;
+  padding-top: 17px;
+  border-right: 1px dashed #eee;
+}
+.discount-txt{
+	float: left;
+	padding:11px 0 0 20px;
+}
+.discount-txt p{
+	font-size: 14px;
+	color: #333;
+	line-height: 30px;
+}
+.account-number{
+	padding-top: 7px;
+	line-height: 30px;
+	color: #333;
+	font-size: 14px;
+}
+.account-number span{
+	display: inline-block;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	background-color: #F2F2F2;
+	color: #999;
+	border-radius: 4px;
+}
+a.btn-discount{
+	background-color: #ff6600;
+  color: #fff;
+  display: block;
+  width: 130px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.discount-popup-btn{
+	padding-top: 20px;
+}
+.discount-success .discount-left{
+	width: 110px;
+  margin-left: 140px;
+  margin-top: 32px;
+  padding-top: 0;
+  height: 84px;
+}
+.discount-success .discount-txt p{
+	font-size: 20px;
+  line-height: 120px;
+  color: #ff6600;
+  padding-left: 10px;
+}
+/*认证*/
+.verify-popup-body{
+	min-width: 580px;
+}
+.verify-popup-body .tips p{
+	text-align: center;
+	font-size: 14px;
+	line-height: 44px;
+	color: #333;
+}
+.btn-center-wrapper{
+	margin: auto;
+}
+.btn-center-wrapper .verify-select{
+	width: 218px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0;
+}
+.btn-center-wrapper .verify-select:hover{
+	color: #00a1e9;
+	border-color: #00a1e9;
+}
+.verify-select i{
+	font-size: 20px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: -2px;
+}
+/*新手任务页弹框*/
+.noviceTask-success p{
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	margin:0;
+	padding: 11px 0;
+}
+.noviceTask-success .iconfont{
+	vertical-align: middle;
+	color: #9ad066;
+	font-size: 30px;
+	margin-right: 10px;
+}
+button{
+	color: #666;
+	width: 100px;
+	height: 30px;
+	background-color: #F8F8F8;
+	border: none;
+	border: 1px solid #eee;
+	font-size: 14px;
+	outline: none;
+	border-radius: 4px;
+	display: block;
+	margin: auto;
+}
+/*道客圈*/
+.circle-share-win{
+	height: auto;
+	max-height: 290px;
+	padding: 5px;
+}
+.circle-share-in-wrap{
+	/*width: 567px;*/
+	height: 86px;
+	border: 1px solid #95a0b6;
+}
+.circle-share-win textarea{
+	height: 50px;
+	/*width: 555px;*/
+	resize: none;
+	padding: 5px;
+	border: none;
+	outline: none;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;color: #666;line-height: 18px;
+}
+.circle-share-in-wrap p{
+	text-align: right;
+	padding-right: 10px;
+	font-size: 14px;
+	background-color: #fff;
+	line-height: 22px;
+	color: #999;
+}
+.circle-share-content{
+	/*width: 537px;*/
+	background-color: #f8f8f8;
+	padding: 15px;
+	margin-top: 15px;
+	max-height: 102px;
+	overflow: hidden;
+}
+.circle-share-content p{
+	color: #666;
+	font-size: 14px;
+	line-height: 20px;
+	max-height: 40px;
+	overflow: hidden;
+}
+.circle-popup-footer{
+	padding-top: 15px;
+	position: relative;
+	height: 28px;
+}
+.circle-popup-btn{
+	float: right;
+	overflow: hidden;
+}
+.circle-popup-footer span{
+	color: #95a0b6;
+	font-size: 14px;
+	line-height: 28px;
+}
+.circle-popup-footer span .iconfont{
+	margin-right: 7px;
+	cursor: pointer;
+}
+.circle-popup-footer span .iconfont.active{
+	color: #10A8E9;
+}
+.circle-popup-btn button{
+	float: left;
+}
+.circle-share-title{
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.circle-share-content .topic-lab{
+  color: #95a1b7;
+  font-size: 14px;
+  line-height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.topic-lab .iconfont{
+  font-size: 14px;
+  margin-right: 8px;
+}
+.topic-lab span{
+  margin: 0 6px;
+}
+.task-share-titlab{
+	font-size: 12px;
+	border: 1px solid #13ae2f;
+	color: #13ae2f;
+	line-height: 20px;
+	padding: 0 3px;
+	margin-left: 5px;
+}
+.circle-share-task-main p{
+	color: #999;
+}
+.circle-share-task-main p span{
+	color: #666;
+}
+.colorf60{color: #FF6600;margin: 0 5px;}
+.book-det-footer{overflow: hidden;padding: 0;margin: 0;padding-top: 15px;}
+.book-det-footer li {
+	list-style: none;
+  float: left;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #999;
+}
+li.seg-pot {
+  line-height: 5px;
+  font-size: 28px;
+  margin-top: -3px;
+}
+.book-cov {
+  width: 84px;
+  height: 118px;
+  background: url(../mobile/image/bg-word-02.png) no-repeat center center;
+  background-size: cover;
+  float: left;
+}
+.circle-share-corpus-main{
+	padding:35px 0 0 99px;
+}
+.circle-share-corpus{
+	min-height: 118px;
+}
+/*文档*/
+.circle-share-wd img{
+	width: 20px;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+.circle-share-wd a{
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+}
+.circle-share-wd .grey9{
+	font-size: 14px;
+	color: #999;
+}
+.circle-share-topic-main{
+	font-size: 14px !important;
+	line-height: 20px !important;
+}
+.circle-share-topic-main p{
+	font-size: 14px !important;
+	line-height: 20px !important;
+}
+/*话题分享*/
+.topic-share-l{
+	float: left;
+	width: 106px;
+}
+.topic-share-l img{
+	display: block;
+	width: 102px;
+	height: 106px;
+}
+.topic-share-r{
+	max-height: 106px;
+	overflow: hidden;
+	float: left;
+	margin-left: 15px;
+}
+.topic-share-r.his-img{
+	padding-left: 15px;
+	max-height: 106px;
+	overflow: hidden;
+}
+
+
+/*横板 左右结构弹窗*/
+.hor-plate{
+	
+}
+.hor-side{
+	width: 84px;
+	height: 84px;
+	float: left;
+	margin: 24px 20px 24px 15px;
+}
+.hor-side img{width: 100%;}
+.vipUp-w-side{
+  width: 118px;
+  height: 90px;
+  float: left;
+  margin: 20px 0px 24px 0px;
+}
+.hor-content{
+	padding: 0 20px;
+	border-left: 1px solid #eee;
+	margin: 15px 0 15px 124px;
+}
+.hor-content .h3{
+	font-size: 20px;
+}
+.hor-content .hor-tips{
+	font-size: 14px;
+	margin: 25px 0 15px;
+	text-indent: 10px;
+	color: #333;
+}
+.hor-tips-con{
+	overflow: hidden;
+	text-indent: 10px;
+}
+.hor-content .hor-icon{
+	float: left;
+	color: #f90;
+	font-size: 12px;
+	margin-right: 25px;
+}
+.hor-content .hor-icon i{color: #f90;vertical-align: middle;}
+.hor-oper{
+	font-size: 0;
+	margin-top: 20px;
+}
+.hor-oper a{font-size: 14px;color: #00a1e9;text-decoration: none;}
+a.btn-blue{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background: #00a1e9;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	margin-right: 15px;
+}
+.btn-blue:hover{background: #00b0ff;}
+a.btn-grey{
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 15px;
+	color: #666;
+	border: 1px solid #eee;
+	background-color: #f8f8f8;
+	padding: 0 10px;
+}
+.btn-grey:hover {
+    background-color: #fbfbfb;
+}
+/*升级VIP*/
+.vipup-btn-wrap{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.vipup-btn-wrap a{
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 25px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	border-radius: 4px;
+}
+.vipup-btn-wrap .btn-cancel{
+	color: #666;
+	border:1px solid #eee;
+	margin-left: 15px;
+	width: auto;
+}

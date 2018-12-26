@@ -2,12 +2,9 @@ package com.doc.entity;
 
 import java.util.Date;
 
-/**
- * @author Inse_QM
- */
 public class Users {
 
-    private int id;
+    private Integer id;
     private String username;
     private String password;
     private String sex;
@@ -18,12 +15,9 @@ public class Users {
     private Date createTime;
     private String headPortrait;
     private String userType;
-
+    
     public Users() {
     }
-
-
-
     public Integer getId() {
         return id;
     }

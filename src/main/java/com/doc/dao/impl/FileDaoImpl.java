@@ -7,10 +7,6 @@ import com.doc.entity.File;
 
 import ssm.dao.impl.CoreDaoImpl;
 
-/**
- * @author Inse_QM
- */
-
 @Repository
 public class FileDaoImpl extends CoreDaoImpl<File> implements FileDao {
 

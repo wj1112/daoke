@@ -22,13 +22,13 @@
 	      <if test="username != null" >username,</if>
 	      <if test="password != null" >password,</if>
 	      <if test="sex != null" >sex,</if>
-	      <if test="birthday != null" >birthbay,</if>
+	      <if test="birthday != null" >birthday,</if>
 	      <if test="qq != null" >qq,</if>
 	      <if test="mobile != null" >mobile,</if>
 	      <if test="email != null" >email,</if>
-	      <if test="create_time != null" >create_time,</if>
-	      <if test="head_portrait != null" >head_portrait,</if>
-	      <if test="user_type != null" >user_type,</if>
+	      <if test="createTime != null" >create_time,</if>
+	      <if test="headPortrait != null" >head_portrait,</if>
+	      <if test="userType != null" >user_type,</if>
 	    </trim>
 	    <trim prefix="values (" suffix=")" suffixOverrides="," >
 	      <if test="username != null" >#{username,jdbcType=VARCHAR},</if>
@@ -38,7 +38,7 @@
 	      <if test="qq != null" >#{qq,jdbcType=VARCHAR},</if>
 	      <if test="mobile != null" >#{mobile,jdbcType=VARCHAR},</if>
 	      <if test="email != null" >#{email,jdbcType=VARCHAR},</if>
-	      <if test="createTime != null" >#{createTime,jdbcType=DATETIME},</if>
+	      <if test="createTime != null" >#{createTime,jdbcType=TIMESTAMP},</if>
 	      <if test="headPortrait != null" >#{headPortrait,jdbcType=VARCHAR},</if>
 	      <if test="userType != null" >#{userType,jdbcType=VARCHAR},</if>
 	    </trim>  
@@ -54,12 +54,13 @@
       <if test="username != null" >username= #{username,jdbcType=VARCHAR},</if>
       <if test="password != null" >password= #{password,jdbcType=VARCHAR},</if>
       <if test="sex != null" >sex= #{sex,jdbcType=VARCHAR},</if>
-      <if test="birthday != null" >birthday #{birthday,jdbcType=DATE},</if>
+      <if test="birthday != null" >birthday = #{birthday,jdbcType=DATE},</if>
       <if test="qq != null" >qq = #{qq,jdbcType=VARCHAR},</if>
       <if test="mobile != null" >mobile = #{mobile,jdbcType=VARCHAR},</if>
       <if test="email != null" >email = #{email,jdbcType=VARCHAR},</if>
-      <if test="headPortrait != null" >headPortrait = #{headPortrait,jdbcType=VARCHAR},</if>
-      <if test="userType != null" >userType = #{userType,jdbcType=VARCHAR},</if>
+      <if test="createTime != null" >create_time = #{create_time,jdbcType=VARCHAR},</if>
+      <if test="headPortrait != null" >head_portrait = #{headPortrait,jdbcType=VARCHAR},</if>
+      <if test="userType != null" >user_type = #{userType,jdbcType=VARCHAR},</if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>

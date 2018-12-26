@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/v4-shims.css">
 <div class="page-content">
@@ -38,13 +39,13 @@
 							</thead>
 
 							<tbody>
-								<c:forEach var="uploadFile" items="${uploadFiles }"
+								<c:forEach var="uploadFile" items="${fileList }"
 									varStatus="vs">
 									<tr>
 										<td class="center">${vs.count }</td>
-										<td>${uploadFile.users.username }</td>
+										<td>${uploadFile.userId }</td>
 										<td>${uploadFile.filename }</td>
-										<td class="hidden-480">${uploadFile.createtime }</td>
+										<td class="hidden-480"><fmt:formatDate value="${uploadFile.createtime }" pattern="yyyy-MM-dd"/></td>
 										<td>${uploadFile.type }</td>
 										<!-- 1绿色通过,0黄色警告待审核，-1灰色表示不通过 -->
 										<td class="hidden-480">
@@ -61,7 +62,7 @@
 											</c:choose>
 										</td>
 										<td>${uploadFile.path }</td>
-										<td>${uploadFile.classify.name}</td>
+										<td>${uploadFile.classifyId}</td>
 										<td>
 											<div
 												class="visible-md visible-lg hidden-sm hidden-xs action-buttons">

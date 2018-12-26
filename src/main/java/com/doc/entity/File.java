@@ -6,6 +6,7 @@ public class File {
 
 	private int id ;
 	private int userId;
+	private String username;
 	private String title;
 	private String filename;
 	private Date createtime;
@@ -16,32 +17,29 @@ public class File {
 	private int classifyId;
 	private String outline;
 	private int audit;
-	
-	public File() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	public File(int id, int userId, String filename, Date createtime, String path, int download, int browse) {
-		this.id = id;
-		this.userId = userId;
-		this.filename = filename;
-		this.createtime = createtime;
-		this.path = path;
-		this.download = download;
-		this.browse = browse;
-	}
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getuserId() {
+	public int getUserId() {
 		return userId;
 	}
-	
-	public void setuserId(int userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getFilename() {
 		return filename;
@@ -61,11 +59,11 @@ public class File {
 	public void setPath(String path) {
 		this.path = path;
 	}
-	public void setType(String type) {
-		this.type = type;
-	}
 	public String getType() {
 		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 	public int getDownload() {
 		return download;
@@ -79,38 +77,30 @@ public class File {
 	public void setBrowse(int browse) {
 		this.browse = browse;
 	}
-	public String getOutline() {
-		return outline;
-	}
-	public void setOutline(String outline) {
-		this.outline = outline;
-	}
 	public int getClassifyId() {
 		return classifyId;
 	}
 	public void setClassifyId(int classifyId) {
 		this.classifyId = classifyId;
 	}
-	public void setAudit(int audit) {
-		this.audit = audit;
+	public String getOutline() {
+		return outline;
+	}
+	public void setOutline(String outline) {
+		this.outline = outline;
 	}
 	public int getAudit() {
 		return audit;
 	}
-
-	public void setTitle(String title) {
-		this.title = title;
+	public void setAudit(int audit) {
+		this.audit = audit;
 	}
-
-	public String getTitle() {
-		return title;
-	}
-
 	@Override
 	public String toString() {
-		return "UploadFile [id=" + id + ", userId=" + userId + ", filename=" + filename + ", createtime=" + createtime
-				+ ", path=" + path + ", type=" + type + ", download=" + download + ", browse=" + browse
-				+ ", classifyId=" + classifyId  + ", outline=" + outline + "]";
+		return "File [id=" + id + ", userId=" + userId + ", username=" + username + ", title=" + title + ", filename="
+				+ filename + ", createtime=" + createtime + ", path=" + path + ", type=" + type + ", download="
+				+ download + ", browse=" + browse + ", classifyId=" + classifyId + ", outline=" + outline + ", audit="
+				+ audit + "]";
 	}
-
+	
 }

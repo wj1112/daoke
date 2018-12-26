@@ -1,13 +1,12 @@
 package com.doc.dao;
 
 
+import org.springframework.stereotype.Repository;
+
 import com.doc.entity.Users;
 
 import ssm.dao.CoreDao;
 
-/**
- * @author Inse_QM
- */
 public interface UsersDao extends CoreDao<Users>{
 	
 }

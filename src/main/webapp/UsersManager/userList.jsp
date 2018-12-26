@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <div class="page-content">
     <div class="page-header">
         <h1>
@@ -52,12 +53,12 @@
                                 <td>${users.username}</td>
                                 <td>${users.password}</td>
                                 <td>${users.sex}</td>
-                                <td>${users.birthday}</td>
+                                <td><fmt:formatDate value="${users.birthday }" pattern="yyyy年MM月dd日"/></td>
                                 <td>${users.userType}</td>
                                 <td>${users.qq}</td>
                                 <td>${users.mobile}</td>
                                 <td>${users.email}</td>
-                                <td>${users.createTime}</td>
+                                <td><fmt:formatDate value="${users.createTime}" pattern="yyyy年MM月dd日"/></td>
 
                                 <%--<td class="hidden-480">
                                     <span class="label label-sm label-warning">Expiring</span>

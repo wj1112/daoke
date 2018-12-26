@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
     <!-- page specific plugin styles -->
 
@@ -23,9 +24,9 @@
     <div class="row">
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
-            <!-- <form class="form-horizontal" role="form" enctype="multipart/form-data"  action="saveUsers" method="post"> -->
+            <form class="form-horizontal" role="form" enctype="multipart/form-data"  action="saveUsers" method="post">
                 <%--<input type="hidden" name="method" value="save">--%>
-             <form class="form-horizontal" role="form"  action="saveUsers" method="post">
+            <!--  <form class="form-horizontal" role="form"  action="saveUsers" method="post"> -->
                 <input type="hidden" name="id" value="${users.id}">
                 <!--账号-->
                 <div class="form-group">
@@ -64,7 +65,8 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label no-padding-right" for="id-date-picker-1">生日</label>
                     <div class="input-group  col-sm-2">
-                        <input name="birthday" value="${users.birthday}" class="form-control date-picker" id="id-date-picker-1" type="text"
+                    
+                        <input name="birthday" value="<fmt:formatDate value='${users.birthday }' pattern='yyyy-MM-dd'/>" class="form-control date-picker" id="id-date-picker-1" type="text"
                                data-date-format="yyyy-mm-dd">
                         <span class="input-group-addon ">
                             <!--<i class="ace-icon fa fa-calendar"></i>-->
@@ -119,10 +121,10 @@
 
                 <div class="space-4"></div>
                 <!--文件上传-->
-                <%-- <div ${users.id == null ? "" : "hidden"} class="form-group">
+                <div ${users.id == null ? "" : "hidden"} class="form-group">
                     <label class="col-sm-3 control-label no-padding-right" for="id-input-file-2">上传图像</label>
                     <div class="col-sm-3">
-                        <input name="headPortrait" type="file"  class="col-xs-10 col-sm-5" id="id-input-file-2" accept="image/*">
+                        <input name="file" type="file"  class="col-xs-10 col-sm-5" id="id-input-file-2" accept="image/*">
                         <span class="ace-file-container" data-title="Choose">
                                 <span class="ace-file-name" data-title="No File ...">
                                     <i class=" ace-icon fa fa-upload"></i>
@@ -133,7 +135,7 @@
                             </i>
                         </a>
                     </div>
-                </div> --%>
+                </div>
 
                 <div class="space-4"></div>
 
