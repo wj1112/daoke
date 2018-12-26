@@ -29,7 +29,7 @@
 							</thead>
 
 							<tbody>
-								<c:forEach var="uploadNotice" items="${uploadNotices }"
+								<c:forEach var="uploadNotice" items="${uploadNoticeList }"
 									varStatus="vs">
 									<tr>
 										<td class="center">${vs.count }</td>

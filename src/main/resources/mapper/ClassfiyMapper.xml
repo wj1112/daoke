@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="mapper.ClassifyMapper">
+  <resultMap id="getListResultMap" type="Classify" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="parent_id" property="parent_id" jdbcType="INTEGER" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+  </resultMap> 
+  <insert id="insert" parameterType="Classify">
+  	insert into classify
+  	<trim prefix="(" suffix=")" suffixOverrides="," >
+	      <if test="name != null" >name,</if>
+	      <if test="parent_id != null" >parent_id,</if>
+	      <if test="code != null" >code,</if>
+	    </trim>
+	    <trim prefix="values (" suffix=")" suffixOverrides="," >
+	      <if test="name != null" >#{name,jdbcType=VARCHAR},</if>
+	      <if test="parent_id != null" >#{parent_id,jdbcType=INTEGER},</if>
+	      <if test="code != null" >#{code,jdbcType=VARCHAR},</if>
+	    </trim>  
+  </insert>
+  
+  <delete id="delete" parameterType="int">
+  	delete from classify where id=#{id}
+  </delete>
+  
+  <update id="update" parameterType="Classify">
+  	update classify
+    <set>
+      <if test="name != null" >name= #{name,jdbcType=VARCHAR},</if>
+      <if test="parent_id != null" >parent_id= #{parent_id,jdbcType=INTEGER},</if>
+      <if test="code != null" >code= #{code,jdbcType=VARCHAR},</if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <select id="getOne" parameterType="int" resultType="Classify">
+  	select * from classify where id = #{id}
+  </select>
+  
+  <select id="getList" parameterType="Classify" resultMap="getListResultMap">
+  		select * from classify <include refid="getCondition" />
+  </select>
+  
+  <!-- 查询条件 分离出来 -->
+<sql id="getCondition">
+	 <where>
+	 	<!-- <if test="audit != null and audit != ''"> and audit = #{audit,jdbcType=INTEGER} </if> -->
+ 	</where>
+</sql>
+  
+  </mapper>

@@ -39,7 +39,7 @@
 							</thead>
 
 							<tbody>
-								<c:forEach var="classify" items="${classifies }" varStatus="vs">
+								<c:forEach var="classify" items="${classfiyList }" varStatus="vs">
 									<tr>
 										<td class="center">${vs.count }</td>
 										<td style="display: none;">${classify.id }</td>

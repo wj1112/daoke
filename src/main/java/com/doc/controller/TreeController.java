@@ -49,15 +49,16 @@ public class TreeController {
 	@RequestMapping(value="/queryClassify")
     public String queryClassify(HttpServletRequest request,	@ModelAttribute("classfiy") Classify classfiy,ModelMap model){		
 		List<Classify> classfiyList = classifyService.getList(classfiy);
-		model.addAttribute("page", "");
-		model.addAttribute("fileList", classfiyList); 
+		model.addAttribute("page", "ClassifyManager/classify.jsp");
+		model.addAttribute("classfiyList", classfiyList); 
         return "index"; 
     }
 	@RequestMapping(value="/queryUploadNotice")
     public String queryUploadNotice(HttpServletRequest request,	@ModelAttribute("uploadNotice") UploadNotice uploadNotice,ModelMap model){		
 		List<UploadNotice> uploadNoticeList = uploadNoticeService.getList(uploadNotice);
-		model.addAttribute("page", "/FileManager/file.jsp");
+		model.addAttribute("page", "/NoticeManager/notice.jsp");
 		model.addAttribute("uploadNoticeList", uploadNoticeList); 
         return "index"; 
     }
+	
 }

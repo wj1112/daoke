@@ -67,16 +67,16 @@
 											<div
 												class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
 												<a class="blue"
-													href="FileUploadAction?method=input&particulars=particulars&id=${uploadFile.id }">
+													href="file/detail?id=${uploadFile.id }">
 													<i class="icon-zoom-in bigger-130"></i>
 												</a> <a class="green"
-													href="FileUploadAction?method=input&id=${uploadFile.id }">
+													href="file/edit?id=${uploadFile.id }">
 													<i class="icon-pencil bigger-130"></i>
 												</a> <a class="red" href="#"
 													onclick="deleteUsers(${uploadFile.id})"> <i
 													class="icon-trash bigger-130"></i>
 												</a>
-												<a class="purple" href="save.jsp">
+												<a class="purple" href="file/add">
 			                                        <div style="font-size: 16px">
 			                                            <i class="fas fa-plus-circle"></i>
 			                                        </div>
@@ -243,7 +243,7 @@
 	});
 	function deleteUsers(id){
 		if(confirm("确认要删除吗?")){
-			location.href="FileUploadAction?method=delete&id=" + id;
+			location.href="file/delete?id=" + id;
 		}
 	}
 </script>

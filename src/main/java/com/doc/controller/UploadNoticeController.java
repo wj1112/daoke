@@ -12,33 +12,33 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.doc.service.FileService;
 
 @Controller
-@RequestMapping(value="file")
-public class FileController {
+@RequestMapping(value="notice")
+public class UploadNoticeController {
 
 	@Autowired
 	private FileService fileService;
 	
 	//用户详情
-	@RequestMapping(value="/detail")
+	@RequestMapping(value="/detailFile")
 	public String detail(HttpServletRequest request , @RequestParam Integer id, ModelMap model) {
 		model.addAttribute("file",fileService.getOne(id));
 		model.addAttribute("page","FileManager/particulars.jsp");
 		return "index";
 	}
 	//添加用户
-	@RequestMapping(value="/add")
+	@RequestMapping(value="/addUsers")
 	public String add(HttpServletRequest request , ModelMap model) {
 		model.addAttribute("page","FileManager/save.jsp");
 		return "index";
 	}
 	//修改用户
-	@RequestMapping(value="/edit")
+	@RequestMapping(value="/editFile")
 	public String edit(HttpServletRequest request, @RequestParam Integer id , ModelMap model) {
 		model.addAttribute("file" , fileService.getOne(id));
 		model.addAttribute("page","FileManager/save.jsp");
 		return "index";
 	}
-	@RequestMapping(value="/delete",method=RequestMethod.GET)    
+	@RequestMapping(value="/deleteFile",method=RequestMethod.GET)    
     public String delete(HttpServletRequest request, @RequestParam("id") Integer id){		
 		fileService.remove(id);
         return "redirect:queryUsers"; 

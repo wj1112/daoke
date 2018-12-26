@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.doc.service.FileService;
+import com.doc.service.ClassifyService;
 
 @Controller
-@RequestMapping(value="file")
-public class FileController {
+@RequestMapping(value="classify")
+public class ClassifyController {
 
 	@Autowired
-	private FileService fileService;
+	private ClassifyService classifyService;
 	
 	//用户详情
 	@RequestMapping(value="/detail")
 	public String detail(HttpServletRequest request , @RequestParam Integer id, ModelMap model) {
-		model.addAttribute("file",fileService.getOne(id));
-		model.addAttribute("page","FileManager/particulars.jsp");
+		model.addAttribute("file",classifyService.getOne(id));
+		model.addAttribute("page","ClassifyManager/particulars.jsp");
 		return "index";
 	}
 	//添加用户
@@ -34,13 +34,13 @@ public class FileController {
 	//修改用户
 	@RequestMapping(value="/edit")
 	public String edit(HttpServletRequest request, @RequestParam Integer id , ModelMap model) {
-		model.addAttribute("file" , fileService.getOne(id));
-		model.addAttribute("page","FileManager/save.jsp");
+		model.addAttribute("classify" , classifyService.getOne(id));
+		model.addAttribute("page","ClassifyManager/save.jsp");
 		return "index";
 	}
-	@RequestMapping(value="/delete",method=RequestMethod.GET)    
+	@RequestMapping(value="/deleteFile",method=RequestMethod.GET)    
     public String delete(HttpServletRequest request, @RequestParam("id") Integer id){		
-		fileService.remove(id);
+		classifyService.remove(id);
         return "redirect:queryUsers"; 
     }
 	
